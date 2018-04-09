@@ -1,0 +1,63 @@
+
+/*页头*/
+.wapper{
+	background: black;
+	height: 60px;
+	width: 60px;
+}
+.wapper #header img{width: 60px;
+                    height: 60px;
+                    margin-left: 50px;}
+
+.wapper #header .nav > li{float:left;
+                        color: white;
+                        
+                        }
+.nav >li .sub_nav {
+	position: absolute;
+	background: rgba(0,0,0,0.7);
+	display: none;
+}
+
+.nav >li .sub_nav li{
+	float: none;
+	line-height: 30px;
+	border-bottom:1px solid #ccc ;
+}
+.nav >li:hover .sub_nav{display: block;}
+
+
+                       
+.wapper #header .nav > li a{ 
+ color: white;
+ font-weight: bold;
+ padding:0 40px 0 40px;
+ line-height: 60px;
+ text-align: center;
+ text-decoration: none;	
+}
+.wapper #header .nav > li a:hover{
+	color: #3333CC;
+}
+
+
+
+
+/*主体内容*/
+#mainContent{
+	height: 800px;
+	width:100%;
+	background: pink;
+	
+	
+}
+
+
+
+/*yewei*/
+#footer{
+	height: 300px;
+	width:100%;
+	background: #99C;
+	
+}

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*字体兼容*/
+body{
+    font-family:"Hiragino Sans GB”,"华文细黑","STHeiti","微软雅黑", "Microsoft YaHei",SimHei,"Helvetica Neue”,Helvetica,Arial, sans-serif !important
+}
+/*局部样式统一*/
+a{
+    text-decoration: none;
+}
+input{
+    outline: none;
+}
+a:hover{text-decoration:none;}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    background-color: #fff !important;
+    color: #004072 !important;
+}
+
+.pagination>li>a, .pagination>li>span {
+    background: #004072 !important;
+    color: #fff !important;
+    border-color: #fff !important;
+    font-weight: bold;
+}
+th{
+    text-align: center;
+}
+
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="stylesheet" type="text/css" href="default.css" />
+		<style>
+.topnav {
+	width: 213px;
+	padding: 40px 28px 25px 0;
+	font-family: "CenturyGothicRegular", "Century Gothic", Arial, Helvetica, sans-serif;
+}
+
+ul.topnav {
+	padding: 0;
+	margin: 0;
+	font-size: 1em;
+	line-height: 0.5em;
+	list-style: none;
+}
+
+ul.topnav li {}
+
+ul.topnav li a {
+	line-height: 10px;
+	font-size: 11px;
+	padding: 10px 5px;
+	color: #000;
+	display: block;
+	text-decoration: none;
+	font-weight: bolder;
+	text-align: left;
+}
+
+ul.topnav li a:hover {
+	background-color:#675C7C;
+	color:white;
+}
+
+ul.topnav ul {
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+ul.topnav ul li {
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+
+ul.topnav ul li a {
+	padding-left: 20px;
+	font-size: 10px;
+	font-weight: normal;
+	outline:0;
+}
+
+ul.topnav ul li a:hover {
+	background-color:#D3C99C;
+	color:#675C7C;
+}
+
+ul.topnav ul ul li a {
+	color:silver;
+	padding-left: 40px;
+}
+
+ul.topnav ul ul li a:hover {
+	background-color:#D3CEB8;
+	color:#675C7C;
+}
+
+ul.topnav span{
+	float:right;
+}
+</style>
+	</head>
+	<body>
+		<div class="container">
+			
+			<div class="main clearfix">
+				
+				<div class="bb-custom-wrapper">
+					<h3>万开科技</h3>
+					<ul class="topnav">
+						<li><a href="#" target="scriptbreaker">Home</a></li>
+						<li><a href="#">物业中心</a>
+							<ul>
+								 <li><a href="#">物业中心</a></li>
+								 <li><a href="#">Events</a></li>
+								 <li><a href="#">Forms</a></li>
+								 <li><a href="#">Games</a></li>
+								 <li><a href="#">Images</a></li>
+								 <li><a href="#">基础管理</a>
+									<ul>
+										<li><a href="#">CSS</a></li>
+										<li><a href="#">JavaScript</a></li>
+										<li><a href="#">JQuery</a></li>
+									</ul>
+								</li>
+								 <li><a href="#">Tabs</a></li>
+							</ul>
+						</li>
+						<li><a href="#">报警中心</a>
+							<ul>
+								 <li class="active"><a href="#">HTML</a></li>
+								 <li><a href="#">CSS</a></li>
+								 <li><a href="#">JavaScript</a></li>
+								 <li><a href="#">Java</a>
+									<ul>
+										<li><a href="#">JSP</a></li>
+										<li><a href="#">JSF</a></li>
+										<li><a href="#">JPA</a></li>
+										<li><a href="#" target="_blank">Contact</a></li>
+									</ul>
+								</li>
+								 <li><a href="#">Tabs</a></li>
+							</ul>
+						</li>
+						<li><a href="#" target="_blank">停车系统</a></li>
+						<li><a href="#">门禁系统</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div><!-- /container -->
+		<script type="text/javascript" src="jquery-1.5.2min.js"></script>
+		<script type="text/javascript" src="scriptbreaker-multiple-accordion-1.js"></script>
+		<script language="JavaScript">
+
+		$(document).ready(function() {
+			$(".topnav").accordion({
+				accordion:false,
+				speed: 500,
+				closedSign: '[+]',
+				openedSign: '[-]'
+			});
+		});
+
+		</script>
+	</body>
+</html>

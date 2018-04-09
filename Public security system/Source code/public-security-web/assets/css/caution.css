@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.icon-shouye{
+    color: #388db3;
+    cursor: pointer;
+}
+.icon-shouye:hover{
+    color: #834839;
+}
+
+.icon-tuichu{
+    margin-right: 30px;
+    color: #834839;
+    cursor: pointer;
+}
+.icon-tuichu:hover{
+    color: red;
+}
+
+
+
+.caution_1{
+    background: url("../img/bg (1).png");
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+      }
+.caution_2{
+    background: url("../img/indexBg.png");
+    background-size: 100% 100%;
+    background-position:center;
+    background-repeat:no-repeat ;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /*border: 1px solid red;*/
+}
+.caution_3{
+    font-size: 34px;
+    font-weight: bolder;
+    height: 10%;
+    /*border: 1px solid red;*/
+    padding-top: 20px;
+    overflow: hidden;
+    color: white;
+}
+.caution_3>p{
+    text-align: center;
+}
+.text_1{
+    margin-top: -20px;
+    margin-right: 60px;
+    text-align: right;
+}
+.text_1 a>span{
+    font-size: 24px;
+    cursor: pointer;
+}
+.caution_4{
+    height: 5%;
+    /*border: 1px solid red;*/
+}
+.caution_5{
+    height: 10%;
+    /*border: 1px solid red;*/
+}
+.caution_5_1{
+    margin: 0 80px 0 80px;
+    /*border:  1px solid green;*/
+    height: 100%;
+}
+.caution_5_1_span{
+    display: inline-block;
+    margin-top: 10px;
+    color: #0083e7;
+}
+.caution_5_select{
+    background: #005fa7;
+    width: 200px;
+    height: 30px;
+    overflow: hidden;
+    padding-left: 10px;
+    border: 1px solid #00fdff;
+    color: white;
+
+    background: url("../img/selectBtn (1).png") no-repeat scroll right center;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+.caution_5_1_1{
+    margin-left: 25px;
+}
+.caution_6{
+    height: 29%;
+    /*border: 1px solid red;*/
+}
+.caution_6_1{
+    margin: 0 80px 0 80px;
+    /*border:  1px solid green;*/
+    height: 100%;
+}
+.caution_6_1_div{
+    width: 33%;
+    height:100%;
+    /*background: yellow;*/
+    float: left;
+    overflow: hidden;
+}
+.caution_6_1_mg{
+    margin-left:12px;
+    /*border: 1px solid red;*/
+}
+
+.w_1{
+    height: 20%;
+    /*border: 1px solid red;*/
+}
+.w_1_2{
+    width: 200px;
+    margin: auto;
+    /*border: 1px solid red;*/
+    text-align: center;
+    color: #0081e3;
+    font-size: 28px;
+    margin-top: 10px;
+}
+.w_2{
+    height: 80%;
+    /*border: 1px solid green ;*/
+    overflow: hidden;
+}
+.w_2_1,.w_2_2{
+    float: left;
+    overflow: hidden;
+}
+.w_2_1{
+    margin:25px 20px 0 100px;
+}
+.w_2_2{
+    margin:25px 20px 0 180px;
+}
+.w_2_1_1,.w_2_1_2{
+    width: 100px;
+    /*border: 1px solid red;*/
+    text-align: center;
+    margin-top: 15px;
+}
+.w_a1{
+    font-size: 24px;
+    font-weight: bolder;
+    color:#FF0066;
+}
+.w_a2{
+    font-weight: bolder;
+    color:#FF0066;
+}
+
+.w_b1{
+    font-size: 24px;
+    font-weight: bolder;
+    color:#00CC66;
+}
+.w_b2{
+    font-weight: bolder;
+    color:#00CC66;
+}
+
+.caution_7{
+    height: 13%;
+    /*border: 1px solid red;*/
+}
+
+.caution_8{
+    height: 30%;
+    /*border: 1px solid red;*/
+}
+.caution_8_1{
+    width: 92.1%;
+    margin: auto;
+    height: 84.1%;
+    /*border: 1px solid yellow;*/
+    overflow-y:auto;
+}
+.caution_8_1>table{
+    width:100%;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+td{
+    width: 10%;
+    /*border: 1px solid firebrick;*/
+}
+.td_div{
+    margin-top: 5px;
+}
+.caution_5_1> select{
+    cursor: pointer;
+}
+.td_red{
+    width: 100px;
+    background: red;
+    margin: auto;
+}
+
+
+.caution_4>a{
+    display: block;
+    width: 150px;
+    height: 30px;
+    /*border: 1px solid red;*/
+    float: left;
+    margin-top: 8px;
+}
+.caution_4_1,.caution_4_2,.caution_4_3{
+    margin-left: 50px;
+}
+

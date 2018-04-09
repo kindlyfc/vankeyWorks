@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+<body ng-app="loginApp" ng-controller="loginCtrl">
+    <div class="index_1">
+        <form class="index_2">
+            <img src="./assets/img/logo_1.png" class="index_2_img" alt="">
+            <div class="index_2_1 top">
+                <input type="text" ng-model="username" placeholder=" 账号">
+            </div>
+            <div class="index_2_1 but">
+                <input type="password" ng-model="password" placeholder=" 密码">
+            </div>
+            <div class="index_3">
+                <a><div class="button_1" ng-click="login()">登录</div></a>
+            </div>
+        </form>
+    </div>
+<script type="text/javascript" src="assets/js/login.bundle.js"></script></body>
+</html>

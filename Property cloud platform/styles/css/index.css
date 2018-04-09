@@ -1,0 +1,72 @@
+
+/*页头*/
+.wapper .logoWan{
+	width:210px;
+	height:70px;
+	margin-left:10px;
+	
+    float: left;
+	
+	
+}
+.logoWan .logo{
+	width: 70px;
+	height:52px;
+    background-image:url(../../images/vankey-11-01.png);
+	background-size:90px 55px;
+	float: left;
+	margin:10px;
+	
+	
+}
+.logoWan p{
+	color:white;
+	font-size:18px;
+	line-height: 70px;
+		
+}
+
+
+
+/*当前项目*/
+.wanTop .currentProject{
+	margin: 0 auto;
+	color: white;
+	line-height: 70px;
+	font-size: 16px;
+	
+	margin-left:268px;
+	cursor:pointer; 
+	
+    float:right;
+}
+.wanTop .currentProject span{
+	margin-left:30px ;
+}
+.wanTop .currentProject a{
+	color: white;
+	font-size:14px;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	width: 66px;
+	background: #FF9900;;
+	
+	margin: 0 6px;
+	
+	border-radius:4px ;
+	text-decoration: none;
+	
+	
+}
+
+.wanTop .currentProject  a:hover{
+	background: #99CC99;
+}
+
+
+
+
+
+         

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <link rel="stylesheet" href="../../../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../static/css/body.css">
+    <link rel="stylesheet" href="../../../static/font_icon/iconfont.css">
+    <link rel="stylesheet" href="../../../static/css/search_name.css">
+
+</body>
+    <div class="background">
+        <div class="header">
+            <!--............................搜索栏条目..........................-->
+            <!--返回-->
+            <div class="return">
+                <a href="${pageContext.request.contextPath}/index"> << 返回</a>
+            </div>
+            <!--搜索条目-->
+            <div class="search">
+                <input  ng-model="signature" type="text" placeholder="姓名/电话/生日/职业">
+                <div class="camera">
+                    <a href="#">
+                        <img src="../../../static/img/camera_normal.png" alt="">
+                    </a>
+                </div>
+                <div class="y_1">|</div>
+                <div class="search-icon" ng-click="selectCondition()" >
+                    <a href="/search_name">
+                        <img src="../../../static/img/search_normal.png">
+                    </a>
+                </div>
+            </div>
+            <!--字体图标-->
+            <div class="nav">
+                <a href="index"><span class="iconfont icon-shouye"></span></a>
+                <a href="logout"><span class="iconfont icon-tuichu"></span></a>
+            </div>
+        </div>
+        <div class="partition">
+            <div class="data_list">
+                <a href="#">数据列表</a>
+            </div>
+            <div class="relationship">
+                <a href="#">关系网络</a>
+            </div>
+        </div>
+        <!--主体部分-->
+        <div class="main">
+            <!--左侧-->
+            <div class="left_side">
+                <div class="user_information">个人信息</div>
+                <img src="../../../static/img/bar02.png">
+                <div class="user_detail">
+                    <div class="user_img">
+                        <img src="../../../static/img/default.png" alt="">
+                    </div>
+                    <ul>
+                        <li>
+                            姓名：<span style="color:red">何静</span>
+                        </li>
+                        <li>
+                            用户类型：<span>业主</span>
+                        </li>
+                        <li>
+                            户主关系：<span>未知</span>
+                        </li>
+                        <li>
+                            电话号码：<span>18980080677</span>
+                        </li>
+                        <li>
+                            MAC：<span></span>
+                        </li>
+                        <li>
+                            IMEI：<span></span>
+                        </li>
+                        <li>
+                            UDID：<span></span>
+                        </li>
+                        <li>
+                            住址：<span>好斯佳物业普罗旺斯7栋1单元0601室</span>
+                        </li>
+                        <li>
+                            证件类型：<span>身份证</span>
+                        </li>
+                        <li>
+                            证件号码：<span>511302198011251769</span>
+                        </li>
+                    </ul>
+                    <div class="export_data">
+                        <span>数据导出</span>
+                    </div>
+                </div>
+                <img src="../../../static/img/divide.png" alt="">
+                <div class="car_information">车辆信息</div>
+                <div class="car_img">
+                    <img src="../../../static/img/car.png" alt="">
+                </div>
+                <ul class="car_number">
+                    <li>
+                        车辆号码：<span></span>
+                    </li>
+                    <li>
+                        车辆型号：<span></span>
+                    </li>
+                </ul>
+                <img src="../../../static/img/bar04.png" alt="">
+            </div>
+            <!--右侧-->
+            <div class="right_side">
+                <div class="table_title">门禁记录</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>日期-时间</th>
+                            <th>用户姓名</th>
+                            <th>小区</th>
+                            <th>门禁ID</th>
+                            <th>开门情况</th>
+                            <th>开门方式</th>
+                            <th>抓拍图像</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                        </tr>
+                        <tr>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                        </tr>
+                        <tr>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                        </tr>
+                        <tr>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                            <td>日期-时间</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table_title">车行记录</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>日期-时间</th>
+                            <th>用户姓名</th>
+                            <th>小区</th>
+                            <th>停车场ID</th>
+                            <th>车牌号</th>
+                            <th>通行情况</th>
+                            <th>抓拍图像</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</html>

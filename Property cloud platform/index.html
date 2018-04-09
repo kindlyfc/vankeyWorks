@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="styles/css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/css/default.css"/>
+	</head>
+    <style>
+		.topnav {
+			width: 213px;
+			padding: 40px 28px 25px 0;
+			font-family: "CenturyGothicRegular", "Century Gothic", Arial, Helvetica, sans-serif;
+		}
+		
+		ul.topnav {
+			padding: 0;
+			margin: 0;
+			font-size: 1em;
+			line-height: 0.5em;
+			list-style: none;
+		}
+		
+		ul.topnav li {}
+		
+		ul.topnav li a {
+			line-height: 10px;
+			font-size: 11px;
+			padding: 10px 5px;
+			color: #000;
+			display: block;
+			text-decoration: none;
+			font-weight: bolder;
+			text-align: left;
+		}
+		
+		ul.topnav li a:hover {
+			background-color:#675C7C;
+			color:white;
+		}
+		
+		ul.topnav ul {
+			margin: 0;
+			padding: 0;
+			display: none;
+		}
+		
+		ul.topnav ul li {
+			margin: 0;
+			padding: 0;
+			clear: both;
+		}
+		
+		ul.topnav ul li a {
+			padding-left: 20px;
+			font-size: 10px;
+			font-weight: normal;
+			outline:0;
+		}
+		
+		ul.topnav ul li a:hover {
+			background-color:#D3C99C;
+			color:#675C7C;
+		}
+		
+		ul.topnav ul ul li a {
+			color:silver;
+			padding-left: 40px;
+		}
+		
+		ul.topnav ul ul li a:hover {
+			background-color:#D3CEB8;
+			color:#675C7C;
+		}
+		
+		ul.topnav span{
+			float:right;
+		}
+    </style> 
+	<body>
+		<!--页头-->
+		<header class="wapper clear">
+            <div id="" class="logoYun clear">
+			  <div class="logo"></div>
+              <p>物业云平台</p>
+			</div>
+            <div id="header" class="topContent">
+                <!--查询-->
+				<div id="" class="search">房屋、车查询</div>
+				
+				  <div id="" class="currentProject clear">
+				  	<span>当前项目：</span>
+				  	<span>万开物业普罗旺斯</span>
+				    <a href="#">切换项目</a>
+				    <a href="#">退出登录</a>
+				  </div>
+				</div>	
+		</header>
+		<!--侧栏-->
+		<!--<aside>
+			<div>物业中心</div>
+			<div>报警中心</div>
+			<div>停车系统</div>
+			<div>门禁系统</div>
+			<div>对讲系统</div>
+			<div>系统管理</div>
+			<div>统计报表</div>
+		</aside>-->
+		<aside class="container">
+			
+			<div class="main clearfix">
+				
+				<div class="bb-custom-wrapper">
+					
+					<ul class="topnav">
+						<!--<li><a href="#" target="scriptbreaker">Home</a></li>-->
+						<li><a href="#">物业中心</a>
+							<ul>
+								 <li><a href="#">基础管理</a>
+								 	<ul>
+										<li><a href="#">项目档案</a></li>
+										<li><a href="#">楼栋档案</a></li>
+										<li><a href="#">房屋档案</a></li>
+										<li><a href="#">住户档案</a></li>
+										<li><a href="#">住户管理</a></li>
+										<li><a href="#">身份证管理</a></li>
+									</ul>
+								 </li>
+								 <li><a href="#">物业管理</a>
+								 	<ul>
+										<li><a href="#">公告管理</a></li>
+										<li><a href="#">投诉管理</a></li>
+										<li><a href="#">报修管理</a></li>
+										<li><a href="#">评论管理</a></li>
+										<li><a href="#">访客管理</a></li>
+										<li><a href="#">投票管理</a></li>
+									</ul>
+								 </li>
+								 <li><a href="#">生活缴费</a>
+								 	<ul>
+										<li><a href="#">缴费情况</a></li>
+										<li><a href="#">交易记录</a></li>
+										<li><a href="#">费用设置</a></li>
+										<li><a href="#">数据导出记录</a></li>
+										<li><a href="#">数据入记录</a></li>
+									</ul>
+								 </li>
+								 <li><a href="#">查询管理</a>
+								 	<ul>
+										<li><a href="#">房屋认证查询</a></li>
+										
+									</ul>
+								 </li>
+								 <li><a href="#">巡更管理</a>
+								 	<ul>
+										<li><a href="#">巡更情况</a></li>
+										<li><a href="#">巡更设置</a></li>
+										<li><a href="#">排班计划</a></li>
+										<li><a href="#">班次设置</a></li>
+									</ul>
+								 </li>
+								 <li><a href="#">设施设备</a>
+									<ul>
+										<li><a href="#">台帐管理</a></li>
+										<li><a href="#">类别管理</a></li>
+										<li><a href="#">等级管理</a></li>
+										<li><a href="#">供应商/品牌管理</a></li>
+										<li><a href="#">二维码管理</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">报警中心</a>
+							<ul>
+								 <li class="active"><a href="#">家庭安防</a>
+								 	<ul>
+										<li><a href="#">报警消息记录</a></li>
+									</ul>
+								 </li>
+								 <li><a href="#">公安安防</a>
+									<ul>
+										<li><a href="#">报警消息记录</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">停车系统</a></li>
+						<li><a href="#">门禁系统</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</aside>
+		<!--主体内容-->
+		<section>
+			<p>首页</p>
+			<div class="Menu">
+				
+			</div>
+		</section>
+	<script type="text/javascript" src="js/jquery-1.5.2min.js"></script>
+		<script type="text/javascript" src="js/scriptbreaker-multiple-accordion-1.js"></script>
+		<script language="JavaScript">
+
+		$(document).ready(function() {
+			$(".topnav").accordion({
+				accordion:false,
+				speed: 500,
+				closedSign: '[+]',
+				openedSign: '[-]'
+			});
+		});
+
+		</script>	
+	</body>
+</html>

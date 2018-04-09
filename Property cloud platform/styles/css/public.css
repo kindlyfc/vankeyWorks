@@ -1,0 +1,25 @@
+
+/*页头*/
+.wapper{width:100%;background:rgb(42,87,154); height:70px;}
+
+/*背景颜色*/
+.black{
+	background:black;
+}
+/*字体*/
+.font14px{font-size:14px;}
+.font16px{font-size:16px;}
+.font18px{font-size:18px;}
+.font20px{font-size:20px;}
+.font_bold{font-weight: bold;}
+/*浮动*/
+.float_left{float:left;}
+.float_right{float:right;}
+.clear:after{
+	clear: both;
+	width: 0;
+	height:0;
+	display:block;
+	content: "";
+}
+

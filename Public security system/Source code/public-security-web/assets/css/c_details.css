@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+.details_1{
+    background: url("../img/bg (1).png");
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.details_2{
+    background: url("../img/detailBg.png");
+    background-size: 100% 100%;
+    background-position:center;
+    background-repeat:no-repeat ;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.details_box{
+    height: 80%;
+    /*border: 1px solid red;*/
+}
+.details_box1{
+    width: 94%;
+    height: 100%;
+    /*border: 1px solid red;*/
+    margin: auto;
+    color: white;
+}
+.d_box1{
+    width: 11%;
+    height: 100%;
+    /*border: 1px solid red;*/
+    float: left;
+    text-align: center;
+}
+.d_box2{
+    width: 87%;
+    height: 100%;
+    /*border: 1px solid red;*/
+    float: left;
+}
+.d_box1_1,.d_box1_2,.d_box1_3{
+    height: 40px;
+    line-height: 40px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.d_box1_1{
+    background: #005ca3;
+}
+
+.d_box1_2{
+    color: #0083e7;
+}
+.d_box1_3{
+    color: #0083e7;
+}
+
+.d_box2_1{
+    margin: 0 80px 0 20px;
+    /*border:  1px solid green;*/
+    height: 5%;
+}
+.d_box2_1>select{
+    cursor: pointer;
+}
+.d_box2_2{
+    /*border: 1px solid red;*/
+    height: 93%;
+    overflow: hidden;
+    /*border: 1px solid yellow;*/
+}
+.d_box2_2_1{
+    width: 98%;
+    /*height: 500px;*/
+    border: 1px solid #0773bc;
+    margin-left: 20px;
+    /*overflow-y: auto;*/
+
+}
+.d_b{
+    height: 90%;
+    /*overflow-y: scroll;*/
+    margin-top: 10px;
+    /*border: 1px solid red;*/
+}
+.d_b>table{
+    border-collapse: collapse;
+}
+td{
+    height: 60px;
+    /*border: 1px solid red;*/
+    text-align: center;
+}
+th{
+    background: #00386b;
+    height: 40px;
+    /*border: 1px solid red;*/
+}
+
+
+
+.th_select{
+    background: #005fa7;
+    width: 100px;
+    height: 30px;
+    overflow: hidden;
+    padding-left: 10px;
+    border: 1px solid #00fdff;
+    color: white;
+
+    background: url("../img/selectBtn (1).png") no-repeat scroll right center;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+.td_red{
+    height: 30px;
+    background: red;
+    line-height:30px;
+}
+.td_span{
+    color: red;
+}
+.td_blue{
+    line-height: 30px;
+    height: 30px;
+    width: 80px;
+    margin: auto;
+    background:#03599b;
+}
+.btnn{
+    /*border: 1px solid red;*/
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+.btnn>button{
+    width: 80px;
+    height: 30px;
+    background:#03599b;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+

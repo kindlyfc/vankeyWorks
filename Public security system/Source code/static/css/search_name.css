@@ -1,0 +1,229 @@
+
+html,body{
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+@media screen and (min-width: 1600px){
+    body{font-size: 16px;}
+}
+@media screen and (min-width: 996px) and (max-width: 1599px){
+    body{font-size: 12px;}
+}
+@media screen and (max-width: 995px){
+    body{font-size: 10px;}
+}
+a:hover{text-decoration:none;}
+ul,li{padding: 0;margin: 0;list-style: none}
+.background{
+    width: 100%;
+    height: 100%;
+    background: url("../img/search_01.png");
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+/*头部*/
+.header{
+    padding: 0 5%;
+    width: 100%;
+    height: 8%;
+    background:url("../img/bg1.png");
+    display: flex;
+    justify-content: space-between;
+}
+/*返回按钮*/
+.return{
+    width: 5%;
+    height: 100%;
+    padding:1.5% 0;
+}
+.return a{color: #4FC8FE;}
+/*搜索框*/
+.search{
+    margin: .5% 0;
+    width: 50%;
+    height: 70%;
+    background: url("../img/search_box.png");
+    background-size: 100% 100%;
+}
+.search input{
+    color: #fff;
+    padding:0 2%;
+    width: 81%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    float: left;
+}
+.search div{
+    margin-top: 1%;
+    width: 6%;
+    height: 80%;
+    float: left;
+}
+.search>.y_1{
+    color: transparent;
+    height: 60%;
+    width: 3.5%;
+    margin-left:2.5%;
+    border-left: 2px solid #0c578a;
+}
+.nav{
+    width: 7%;
+    height: 100%;
+    padding: 1% 0;
+}
+.camera img{
+    width: 80%;
+    height: 75%;
+}
+.search-icon img{
+    width:75%;
+    height: 85%;
+}
+/*右侧导航*/
+.icon-shouye {
+    color: #388db3;
+    font-size: 1.7em;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.icon-tuichu {
+    color: #834839;
+    font-size: 1.7em;
+    cursor: pointer;
+}
+.icon-shouye:hover{
+    color: #834839;
+}
+.icon-tuichu:hover{
+    color: red;
+}
+
+/*主体部分*/
+.main{
+    width: 100%;
+    height: 800px;
+    background: url("../../static/img/search_bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.partition{
+    margin-top: 10px;
+    width: 100%;
+    height: 5%;
+}
+.data_list,.relationship{
+    display: inline-block;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    line-height: 45px;
+    font-size: 1.2em;
+    background: url("../../static/img/item_focus.png") no-repeat;
+    background-size: 100% 100%;
+}
+.relationship{
+    position: relative;
+    left: -2%;
+    background: url("../../static/img/item.png") no-repeat;
+    background-size: 100% 100%;
+}
+.data_list>a{color:#fff}
+.relationship>a{color: #505b6f;}
+.relationship>a:hover{color: #fff}
+
+/*左边部分*/
+.left_side{
+    width: 30%;
+    height: 550px;
+    margin-right: 2%;
+    padding-left: 5%;
+    box-sizing: border-box;
+    float: left;
+}
+.left_side img{
+    height: 7px;
+    width: 85%;
+}
+.right_side{
+    width: 68%;
+    height: 800px;
+    float: left;
+}
+.user_information{
+    width: 100%;
+    height: 40px;
+    line-height: 55px;
+    font-size: 1.5em;
+    color: #4FC8FE;
+    padding-left:20px;
+}
+.user_img{
+    width: 120px;
+    height: 110px;
+    background: url("../../static/img/photo.png") no-repeat;
+    background-size: 100% 100%;
+}
+.user_img>img{
+    width: 50%;
+    height: 60%;
+    margin: 20% 0px 0px 25%;
+}
+.user_detail>ul{
+    margin: 10px 0;
+    color: #fff;
+}
+.user_detail>div,.user_detail>img,.user_detail>ul{margin-left: 20px}
+.export_data>span{
+    display: inline-block;
+    border: 1px solid #4FC8FE;
+    font-size: 16px;
+    padding: 3px 6px;
+    color: #4FC8FE;
+    background-color: #10395c;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.car_information{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.5em;
+    color: #4FC8FE;
+    padding-left: 20px;
+}
+.car_img{
+    width: 150px;
+    height: 110px;
+    background: url("../../static/img/carbkg.png") no-repeat;
+    background-size: 100% 100%;
+    margin-left: 20px;
+}
+.car_img>img{
+    width: 75px;
+    height: 66px;
+    margin: 20% 0 0 25%;
+}
+.car_number{
+    margin: 10px 20px;
+    color: #fff;
+}
+
+/*右边部分*/
+.table_title{
+    font-size: 1.2em;
+    color: #fff;
+    margin-top: 20px;
+}
+table{
+    text-align: center;
+    width: 90%;
+    color: #fff;
+    background: url("../../static/img/menjin2.png") no-repeat;
+    background-size: 100% 42px;
+}
+thead{background: rgba(51,122,183,0.2)}
+tr{height: 40px;}
+td{width: 12%}
+tbody>tr:nth-child(even){background: rgba(12,87,138,0.15)}

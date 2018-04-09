@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-size: 16px;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.search{
+    width: 100%;
+    height: 100%;
+    background: url("../img/login.jpg");
+    overflow: hidden;
+}
+.search_1{
+    width: 900px;
+    height: 680px;
+    /*border: 1px solid red;*/
+    margin: auto;
+    margin-top: 8%;
+    background: url("../img/circle-n (1).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.icon-shouye{
+    color: #388db3;
+    cursor: pointer;
+}
+.icon-shouye:hover{
+    color: #834839;
+}
+.search_icn{
+    margin-top: 30px;
+    float: right;
+    margin-right: 40px;
+}
+.search div span{
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+
+.icon-tuichu{
+    margin-right: 30px;
+    color: #834839;
+    cursor: pointer;
+}
+.icon-tuichu:hover{
+    color: red;
+}
+
+
+.search_2{
+    width: 850px;
+    height: 60px;
+    border-right: 1px solid #15a5e4;
+    border-bottom: 1px solid #15a5e4;
+    background: url("../img/upload_bkg.png");
+    margin: auto;
+    margin-top: 30%;
+    overflow: hidden;
+}
+.search_2>input{
+    width: 670px;
+    height: 50px;
+    border: none;
+    background: rgba(0,0,0,0);
+    outline:medium;
+    margin-top: 5px;
+    vertical-align:middle;
+    font-size: 24px;
+    margin-left: 30px;
+    color: #757575;
+    float: left;
+}
+.img1,.img2{
+    display: block;
+    float: left;
+}
+.img1{
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.img2{
+    margin-top: 18px;
+    margin-left: 45px;
+    cursor: pointer;
+}

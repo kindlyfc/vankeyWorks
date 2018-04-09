@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>消息队列测试</title>
+</head>
+<body>
+<ul></ul>
+<script src="stomp-1.7.1.min.js"></script>
+<script>
+    var url = 'ws://192.168.0.104:61614/stomp';
+    var login = 'admin';
+    var pass = 'admin';
+
+    var destination = '/topic/faceAlarm_comm_8';
+    var client = Stomp.client(url);
+
+    var onConnect = function (frame) {
+        console.log(frame);
+        client.subscribe(destination, function(message) {
+            console.log(message);
+            var li = document.createElement('li');
+            li.innerText = '报警消息：'+message;
+            document.getElementsByTagName('ul')[0].appendChild(li);
+        })
+    };
+
+    console.log(client.connect(login, pass, onConnect));
+</script>
+</body>
+</html>

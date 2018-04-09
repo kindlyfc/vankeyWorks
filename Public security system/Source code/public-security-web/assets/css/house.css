@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+.house_1{
+    background: url("../img/bg (1).png");
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.house_2{
+    background: url("../img/hd-bg (1).png");
+    background-position: center;
+    background-repeat:no-repeat ;
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+}
+.house_2>p{
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 20px;
+    text-align: center;
+}
+.m_text{
+    margin-right: 60px;
+    text-align: right;
+    margin-top: 10px;
+}
+.m_text a>span{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.icon-shouye{
+    color: #388db3;
+    cursor: pointer;
+}
+.icon-shouye:hover{
+    color: #834839;
+}
+
+.icon-tuichu{
+    margin-right: 30px;
+    color: #834839;
+    cursor: pointer;
+}
+.icon-tuichu:hover{
+    color: red;
+}
+
+
+
+.house_3{
+    width: 85%;
+    height: 85%;
+    /*border: 1px solid red;*/
+    margin: auto;
+}
+
+.house_3_1{
+    height: 15%;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+}
+.house_3_2{
+    height: 60%;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+}
+.house_3_3{
+    /*border: 1px solid red;*/
+    overflow: hidden;
+}
+
+
+
+/*。。。。。。。。。。。。。。搜索栏css*/
+
+.caution_5_1{
+    margin: 0 80px 0 80px;
+    /*border:  1px solid green;*/
+    height: 100%;
+}
+.caution_5_1_span{
+    display: inline-block;
+    margin-top: 10px;
+    color: #0083e7;
+    margin-left: 50px;
+}
+.caution_5_select{
+    background: #005fa7;
+    width: 200px;
+    height: 30px;
+    overflow: hidden;
+    padding-left: 10px;
+    border: 1px solid #00fdff;
+    color: white;
+
+    background: url("../img/selectBtn (1).png") no-repeat scroll right center;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+
+.house_3_1_1{
+    margin-top: 30px;
+}
+.house_3_1_2{
+    margin-top: 30px;
+}
+/*使用状态*/
+.house_3_2_z{
+    width: 39%;
+    height: 100%;
+    background: url("../img/home1.png") no-repeat scroll right center;
+    /* border: 1px solid red; */
+    float: left;
+}
+.house_3_2_y{
+    width: 58%;
+    height: 100%;
+    margin-left: 2%; 
+    background: url("../img/home2.png") no-repeat scroll right center;
+    /* border: 1px solid red; */
+    float: left;
+}
+.housez_1,.housez_2{
+    color: white;
+    font-weight:bolder ;
+    /*border: 1px solid red;*/
+    text-align: center;
+}
+.he_1{
+    width: 50%;
+    height: 100%;
+    /*border: 1px solid red;*/
+    float: left;
+
+}
+.he_2{
+    width: 49%;
+    height: 100%;
+    /*border: 1px solid red;*/
+    float: left;
+}
+.housez_1{
+    width: 200px;
+    margin: auto;
+    margin-left: 80px;
+    margin-top: 60%;
+}
+.housez_2{
+    margin: auto;
+    margin-top: 60%;
+}
+.h_1{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #04a3fe;
+}
+.house_3_2b{
+    width: 100%;
+    height: 70%;
+    /*border: 1px solid red;*/
+    margin: auto;
+    margin-top: 100px;
+}
+
+.house_3_3_1{
+    height: 20px;
+    /*border: 1px solid red;*/
+    background: url("../img/title2.png") no-repeat scroll right center;
+}
+
+.house_a{
+    /*border: 1px solid red;*/
+}
+.house_span{
+    margin-left: 30px;
+    color: #04a3fe;
+}
+.house_d{
+    /*border: 1px solid red;*/
+}
+.house_c{
+    color: #04a3fe;
+}
+.house_c_1>div{
+    width: 30px;
+    height: 20px;
+    border-radius: 5px;
+    /*border: 1px solid red;*/
+    margin-left: 10px;
+}
+.house_c_1>span{
+    margin-left: 10px;
+    float: left;
+}
+.h_c1{
+    background:#b8f1cc;
+    float: left;
+}
+.h_c2{
+    background:#CC9933;
+    float: left;
+}
+.h_c3{
+    background:#9966FF;
+    float: left;
+}
+.h_c4{
+    background:#99CC66;
+    float: left;
+}
+.h_c5{
+    background:#00CCFF;
+    float: left;
+}
+.house_c{
+    width: 500px;
+    /*border: 1px solid red;*/
+}
+.house_a,.house_d,.house_c{
+    overflow: hidden;
+    float: left;
+}
+.h_box{
+    margin-top: 20px;
+}
+.caution_5_1_1:hover{
+    cursor: pointer;
+}

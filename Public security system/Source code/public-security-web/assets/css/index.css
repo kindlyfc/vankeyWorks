@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    font-size: 1em;
+}
+.index_1{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+     background: url("../img/platform-o.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text_1{
+    float: right;
+    font-weight: bolder;
+}
+.text_1 span{
+    display: inline-block;
+    font-size: 30px;
+    line-height: 70px;
+    margin-left: 20px;
+}
+.icon-shouye{
+    color: #388db3;
+    cursor: pointer;
+    }
+.icon-shouye:hover{
+    color: #834839;
+}
+
+.icon-yonghu1{
+    color: #388db3;
+    cursor: pointer;
+}
+.icon-yonghu1:hover{
+    color: #834839;
+}
+
+.icon-tuichu{
+    margin-right: 30px;
+    color: #834839;
+    cursor: pointer;
+}
+.icon-tuichu:hover{
+    color: red;
+}
+
+
+
+.index_1_1{
+    height: 10%;
+    /*border: 1px solid red;*/
+
+}
+.index_1_1 img{
+    margin-top: 25px;
+    margin-left: 10%;
+}
+.index_1_2 {
+
+    width: 100%;
+    /*border: 1px solid green;*/
+    height: 50%;
+}
+.index_1_2_1{
+    width: 96%;
+    height:96%;
+    /*border: 1px solid red;*/
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.index_1_2_1_1{
+    width: 20%;
+    height: 100%;
+    /*border: 1px solid yellow;*/
+    /*background: rgba(10,99,5,.5);*/
+    float: left;
+    overflow: hidden;
+}
+.index_1_2_1_2{
+    width: 78.5%;
+    height: 81.2%;
+    /*border: 1px solid yellow;*/
+    float: left;
+    margin-top: 50px;
+    margin-left: 1.5%;
+    background: rgba(5,5,5,.5);
+}
+.time{
+    width:100%;
+    height: 95px;
+    /*border: 1px solid red;*/
+
+}
+.time-1{
+    width: 50%;
+    height:95px;
+    /*border: 1px solid red;*/
+    margin: auto;
+    text-align: center;
+    font-size: 1.2em;
+    color: #04a3fe;
+}
+.time-1 div:nth-child(1){
+    font-size: 24px;
+    font-weight: bolder;
+}
+.time-1 div:nth-child(2){
+    font-size: 14px;
+    margin-top: 10px;
+}
+.time-1 div:nth-child(1){
+    margin-top: 20px;
+}
+
+
+.time-2{
+    height: 120px;
+    /*border: 1px solid red;*/
+    margin-top: 40%;
+    margin-left: 8%;
+    overflow: hidden;
+}
+.time-2-1{
+    padding: 20px 0 20px 30px;
+    color: white;
+    font-size: 16px;
+}
+.time-2-1 div{
+    margin-bottom: 10px;
+}
+
+.index_2{
+    width: 100%;
+    height: 50%;
+
+    /*background: rgba(5,15,9,.6);*/
+    padding: 20px;
+}
+.index_2_1{
+    margin-top: 30px;
+    width: 23%;
+    height: 290px;
+    /*background: rgba(59,36,25,.4);*/
+    float: left;
+    overflow: hidden;
+    margin-left: 1.5%;
+}
+.index_2_1 div{
+    overflow: hidden;
+}
+/*.index_2_1 img{*/
+    /*width: 100%;*/
+    /*height: 89px;*/
+/*}*/
+.index_2_1 div div{
+    width: 26%;
+    /*border: 1px solid red;*/
+    text-align: center;
+    overflow: hidden;
+}
+/*.index_2_1 div .index_img{*/
+    /*width: 20%;*/
+/*}*/
+.index_2_div1{
+    float: left;
+    margin-left: 10%;
+}
+.index_2_div2{
+    float:right;
+    margin-right: 10%;
+}
+.index_2_div1>img{
+    text-align: center;
+}
+.index_2_div2>{
+    text-align: center;
+}
+.index_2_1_1{
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.index_2_1 div div>P{
+    font-weight: bolder;
+    color: #04a3fe;
+}
+
+/*..................块间距调节..............*/
+.index_k_2{
+    margin-left: 1.7%;
+}
+.index_k_3{
+    margin-left: 1.7%;
+}
+/*.tu_1{*/
+    /*margin-left: 30px;*/
+/*}*/
+.index_k_4{
+    width: 22%;
+}
+/*......................列表................*/
+.index_table{
+    margin-top: 35px;
+   /*border: 1px solid red;*/
+    width: 100%;
+   /*height: 100%;*/
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+.index_table th{
+    height: 30px;
+}
+.tr_1{
+    color: red;
+    cursor: pointer;
+}
+
+.tr_2 div{
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background: red;
+}
+
+.tr_7_1,.tr_7_2, .tr_7_3{
+    width: 35px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+}
+.tr_7 img{
+    width: 100%;
+    height: 100%;
+}
+.tr_8 img{
+    width: 100%;
+    height: 100%;
+}
+.tr_9 img{
+    width: 100%;
+    height: 100%;
+}
+.tr_7_1,.tr_7_2,.tr_7_3{
+    cursor: pointer;
+}
+

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+.export{
+    background: url("../img/bg (1).png");
+    background-repeat: repeat-y;
+    background-size:100% 100%;
+    width: 100%;
+}
+.export_1{
+    background: url("../img/hd-bg (1).png");
+    background-position: center;
+    background-repeat:no-repeat ;
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+}
+.export_1>p{
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 20px;
+    text-align: center;
+}
+.e_text{
+    margin-right: 60px;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.e_text a>span{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.icon-shouye{
+    color: #388db3;
+    cursor: pointer;
+}
+.icon-shouye:hover{
+    color: #834839;
+}
+
+.icon-tuichu{
+    margin-right: 30px;
+    color: #834839;
+    cursor: pointer;
+}
+.icon-tuichu:hover{
+    color: red;
+}
+/*.....................主体内容.....................*/
+.export_2{
+    width: 100%;
+    height: 920px;
+    /*border: 1px solid red;*/
+}
+.export_2_1{
+    width: 90%;
+    height: 800px;
+    /*border: 1px solid green;*/
+    margin: auto;
+    margin-top:40px;
+}
+.export_2_2{
+    height: 125px;
+    background: url("../img/upload_bkg.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 125px;
+    color: white;
+    font-weight: bolder;
+}
+.export_2_3{
+    width: 100%;
+    height: 270px;
+    /*border: 1px solid red;*/
+    margin-bottom: 20px;
+}
+.export_2_3_1,.export_2_3_2,.export_2_3_3{
+    width: 31%;
+    height: 270px;
+    /*border: 1px solid red;*/
+    float: left;
+    margin-left: 1.7%;
+    background: url("../img/upload_bkg.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /*margin-bottom: 20px;*/
+    overflow: hidden;
+
+    text-align: center;
+    line-height: 270px;
+    color: #31c8fe;
+}
+
+.export_2_3_1:hover{
+    color: white;
+    cursor: pointer;
+    background: rgba(24,168,254,.2);
+}
+
+
+.export_2_3_2:hover{
+    cursor: pointer;
+    background: rgba(24,168,254,.2);
+    color: white;
+}
+
+
+.export_2_3_3:hover{
+    color: white;
+    cursor: pointer;
+    background: rgba(24,168,254,.2);
+}
