@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<link rel="stylesheet" href="../../../static/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../../static/css/body.css">
+<link rel="stylesheet" href="../../../static/font_icon/iconfont.css">
+<link rel="stylesheet" href="../../../static/css/search_community.css">
+</body>
+<div class="background">
+    <div class="header">
+        <!--............................搜索栏条目..........................-->
+        <!--返回-->
+        <div class="return">
+            <a href="${pageContext.request.contextPath}/index"> << 返回</a>
+        </div>
+        <!--搜索条目-->
+        <div class="search">
+            <input  ng-model="signature" type="text" placeholder="姓名/电话/生日/职业">
+            <div class="camera">
+                <a href="#">
+                    <img src="../../../static/img/camera_normal.png" alt="">
+                </a>
+            </div>
+            <div class="y_1">|</div>
+            <div class="search-icon" ng-click="selectCondition()" >
+                <a href="/search_name">
+                    <img src="../../../static/img/search_normal.png">
+                </a>
+            </div>
+        </div>
+        <!--字体图标-->
+        <div class="nav">
+            <a href="index"><span class="iconfont icon-shouye"></span></a>
+            <a href="logout"><span class="iconfont icon-tuichu"></span></a>
+        </div>
+    </div>
+    <div class="partition">
+        <div class="data_list">
+            <a href="#">数据列表</a>
+        </div>
+        <div class="relationship">
+            <a href="#">关系网络</a>
+        </div>
+    </div>
+    <!--主体部分-->
+    <div class="main">
+        <!--左侧-->
+        <div class="left_side">
+            <p class="com_information">小区信息</p>
+            <img src="../../../static/img/bar02.png">
+            <div class="unit_image">
+                <img src="../../../static/img/home.png" alt="图片加载中...">
+            </div>
+            <div class="com_detail">
+                <p>所属省市：<span>四川省成都市</span></p>
+                <p>详细地址：<span>四川省成都市蜀跃路6号</span></p>
+                <p>总户数：<span>51</span> 总人数：<span>60</span></p>
+                <p>业主数：<span>60</span> 租户数：<span></span></p>
+                <p>流动人口数：<span></span> 常住人口数：<span></span></p>
+                <a href="#">房屋可视化（含水电气数据）</a><br>
+                <span class="data_export">数据导出</span>
+            </div>
+            <img src="../../../static/img/divide.png" alt="">
+            <div id="people_counting"></div>
+            <div id="car_counting"></div>
+        </div>
+        <!--右侧-->
+        <div class="right_side">
+            <div class="table_title">门禁记录</div>
+            <table>
+                <thead>
+                <tr>
+                    <th>日期-时间</th>
+                    <th>用户姓名</th>
+                    <th>小区</th>
+                    <th>门禁ID</th>
+                    <th>开门情况</th>
+                    <th>开门方式</th>
+                    <th>抓拍图像</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                </tr>
+                <tr>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                </tr>
+                <tr>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                </tr>
+                <tr>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                    <td>日期-时间</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="table_title">车行记录</div>
+            <table>
+                <thead>
+                <tr>
+                    <th>日期-时间</th>
+                    <th>用户姓名</th>
+                    <th>小区</th>
+                    <th>停车场ID</th>
+                    <th>车牌号</th>
+                    <th>通行情况</th>
+                    <th>抓拍图像</th>
+                </tr>
+                </thead>
+            </table>
+            <div class="table_title">访客记录</div>
+            <table>
+                <thead>
+                <tr>
+                    <th>日期-时间</th>
+                    <th>访客姓名</th>
+                    <th>被防者姓名</th>
+                    <th>访问地址</th>
+                    <th>访问理由</th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/echarts/4.0.4/echarts.min.js"></script>
+<script>
+    var peopleCountingChart = echarts.init(document.getElementById('people_counting'));
+    option = {
+        title:{},
+        xAxis: {
+            type: 'category',
+            data: ['4/' +
+            '' +
+            '', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+            axisLine:{
+                lineStyle:{color:'#fff'}
+            }
+
+        },
+        yAxis: {
+            type: 'value',
+            splitLine:{show:false},
+            axisLine:{
+                lineStyle:{color:'#fff'}
+            }
+        },
+        series: [{
+            data: [820, 932, 901, 934, 1290, 1330, 1320],
+            type: 'line',
+            lineStyle: {
+                color:"#4FC8FE",
+                width: 2
+            },
+            itemStyle:{color:"#4FC8FE"}
+        }]
+    };
+    peopleCountingChart.setOption(option);
+</script>
+</html>
