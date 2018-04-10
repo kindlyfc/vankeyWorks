@@ -149,9 +149,10 @@ ul,li{padding: 0;margin: 0;list-style: none}
     margin: 10px 0;
 }
 .right_side{
-    width: 68%;
+    width: 60%;
     height: 800px;
     float: left;
+    margin-left: 5%;
 }
 .com_information{
     width: 100%;
@@ -181,9 +182,11 @@ ul,li{padding: 0;margin: 0;list-style: none}
     color: #fff;
     margin-top: 20px;
 }
+.table_title>a{color: #4FC8FE;}
+.table_title>a:hover{color: #fff}
 table{
     text-align: center;
-    width: 90%;
+    width: 100%;
     color: #fff;
     background: url("../../static/img/menjin2.png") no-repeat;
     background-size: 100% 42px;
@@ -192,3 +195,5 @@ thead{background: rgba(51,122,183,0.2)}
 tr{height: 40px;}
 td{width: 12%}
 tbody>tr:nth-child(even){background: rgba(12,87,138,0.15)}
+
+/*导出框*/
