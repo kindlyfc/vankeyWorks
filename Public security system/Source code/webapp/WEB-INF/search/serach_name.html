@@ -89,7 +89,7 @@
                         </li>
                     </ul>
                     <div class="export_data">
-                        <span>数据导出</span>
+                        <span onclick="show()">数据导出</span>
                     </div>
                 </div>
                 <img src="../../../static/img/divide.png" alt="">
@@ -177,6 +177,24 @@
                 </table>
             </div>
         </div>
+        <!--导出框-->
+        <div class="export_container">
+            <div class="export">
+                <h3>小区信息导出选项</h3>
+                <p>(只能导出7天内数据)</p>
+                <div class="check_box"></div>
+                <img src="../../../static/img/queding.png" alt="">
+                <img src="../../../static/img/quxiao.png" alt="" onclick="hide()">
+            </div>
+        </div>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        function show(){
+            $('.export_container').show();
+        }
+        function hide() {
+            $('.export_container').hide();
+        }
+    </script>
 </html>

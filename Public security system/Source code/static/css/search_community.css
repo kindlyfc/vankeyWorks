@@ -23,6 +23,7 @@ ul,li{padding: 0;margin: 0;list-style: none}
     background: url("../img/search_01.png");
     background-size: 100% 100%;
     overflow: hidden;
+    position: relative;
 }
 /*头部*/
 .header{
@@ -133,6 +134,21 @@ ul,li{padding: 0;margin: 0;list-style: none}
 .data_list>a{color:#fff}
 .relationship>a{color: #505b6f;}
 .relationship>a:hover{color: #fff}
+.tooltip_text{
+    background-color: dimgrey;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding:.3%;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 20%;
+    font-size: .5em;
+}
+.icon{
+    display:inline-block;width: 0;height:0;border: 6px solid transparent;border-right: 10px solid dimgrey;position:absolute;left: -13px;top:15%;
+}
 
 /*左边部分*/
 .left_side{
@@ -174,13 +190,14 @@ ul,li{padding: 0;margin: 0;list-style: none}
     background-color: #10395c !important;
     cursor: pointer !important;}
 /*折线图*/
-#people_counting,#car_counting{width: 90%;height: 250px;}
+#people_counting,#car_counting{width: 100%;height: 30%;}
 
 /*右边部分*/
 .table_title{
     font-size: 1.2em;
     color: #fff;
     margin-top: 20px;
+    position: relative;
 }
 .table_title>a{color: #4FC8FE;}
 .table_title>a:hover{color: #fff}
@@ -197,3 +214,32 @@ td{width: 12%}
 tbody>tr:nth-child(even){background: rgba(12,87,138,0.15)}
 
 /*导出框*/
+.export_container{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 666;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.export{
+    margin: 10% auto;
+    height: 500px;
+    width: 450px;
+    background: url(../../static/img/toast-bkg.png) no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.check_box{
+    width: 100%;
+    height: 320px;
+    padding: 0 20px;
+}
+.export>img{
+    cursor: pointer;
+    margin-left: 20px;
+}

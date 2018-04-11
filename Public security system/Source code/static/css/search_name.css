@@ -21,7 +21,7 @@ ul,li{padding: 0;margin: 0;list-style: none}
     height: 100%;
     background: url("../img/search_01.png");
     background-size: 100% 100%;
-    overflow: hidden;
+    position: relative;
 }
 /*头部*/
 .header{
@@ -104,7 +104,6 @@ ul,li{padding: 0;margin: 0;list-style: none}
 /*主体部分*/
 .main{
     width: 100%;
-    height: 800px;
     background: url("../../static/img/search_bg.png") no-repeat;
     background-size: 100% 100%;
 }
@@ -148,7 +147,7 @@ ul,li{padding: 0;margin: 0;list-style: none}
 }
 .right_side{
     width: 68%;
-    height: 800px;
+    height: 700px;
     float: left;
 }
 .user_information{
@@ -227,3 +226,34 @@ thead{background: rgba(51,122,183,0.2)}
 tr{height: 40px;}
 td{width: 12%}
 tbody>tr:nth-child(even){background: rgba(12,87,138,0.15)}
+
+/*导出框*/
+.export_container{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 666;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.export{
+    margin: 10% auto;
+    height: 400px;
+    width: 450px;
+    background: url(../../static/img/toast-bkg.png) no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.check_box{
+    width: 100%;
+    height: 230px;
+    padding: 0 20px;
+}
+.export>img{
+    cursor: pointer;
+    margin-left: 20px;
+}
