@@ -26,6 +26,15 @@ html,body{height: 100%}
     line-height: 70px;
     text-align: center;
 }
+.login_box #spanInfo{
+	margin-top:-10px ;
+}
+
+.login_box div .logo{
+	 width: 70px;
+	 height: 70px;
+	 margin-top: 20px;
+}
 .logo{
     width: 180px;
     height: 100px;
@@ -63,6 +72,7 @@ html,body{height: 100%}
     outline: none;
     border-radius: 5px;
     background:  rgba(40,100,168,0.8);
+    margin-top: 30px;
 }
 .login_btn:hover{background:  rgb(40,100,168);}
 .check>img,.check>a{

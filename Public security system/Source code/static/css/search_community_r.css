@@ -1,0 +1,101 @@
+html,body{
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+@media screen and (min-width: 1600px){
+    body{font-size: 16px;}
+}
+@media screen and (min-width: 996px) and (max-width: 1599px){
+    body{font-size: 12px;}
+}
+@media screen and (max-width: 995px){
+    body{font-size: 10px;}
+}
+a:hover{text-decoration:none;}
+ul,li{padding: 0;margin: 0;list-style: none}
+.background{
+    width: 100%;
+    height: 100%;
+    background: url("../img/search_01.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+/*头部*/
+.header{
+    padding: 0 5%;
+    width: 100%;
+    height: 8%;
+    background:url("../img/bg1.png");
+    display: flex;
+    justify-content: space-between;
+}
+/*返回按钮*/
+.return{
+    width: 5%;
+    height: 100%;
+    padding:1.5% 0;
+}
+.return a{color: #4FC8FE;}
+/*搜索框*/
+.search{
+    margin: .5% 0;
+    width: 50%;
+    height: 70%;
+    background: url("../img/search_box.png");
+    background-size: 100% 100%;
+}
+.search input{
+    color: #fff;
+    padding:0 2%;
+    width: 81%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    float: left;
+}
+.search div{
+    margin-top: 1%;
+    width: 6%;
+    height: 80%;
+    float: left;
+}
+.search>.y_1{
+    color: transparent;
+    height: 60%;
+    width: 3.5%;
+    margin-left:2.5%;
+    border-left: 2px solid #0c578a;
+}
+.nav{
+    width: 7%;
+    height: 100%;
+    padding: 1% 0;
+}
+.camera img{
+    width: 80%;
+    height: 75%;
+}
+.search-icon img{
+    width:75%;
+    height: 85%;
+}
+/*右侧导航*/
+.icon-shouye {
+    color: #388db3;
+    font-size: 1.7em;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.icon-tuichu {
+    color: #834839;
+    font-size: 1.7em;
+    cursor: pointer;
+}
+.icon-shouye:hover{
+    color: #834839;
+}
+.icon-tuichu:hover{
+    color: red;
+}

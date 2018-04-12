@@ -11,7 +11,7 @@ a:hover,a:focus,.maincolor,.maincolor a{color:#06c}
 .bg-1{background-color:#f5fafe}
 
 /*头部颜色*/
-.Hui-aside{background-color:#438eb9;}
+.Hui-aside{background-color:#43a9ff;}
 
 /*侧边栏*/
 .Hui-logo,.Hui-logo-m{color:#fff}
@@ -36,14 +36,14 @@ a:hover,a:focus,.maincolor,.maincolor a{color:#06c}
 h4{line-height:30px}
 
 /*页面框架*/
-.Hui-aside{position:absolute;top:70px;bottom:0;left:0;width:70px;z-index:101;/*overflow:auto*/}
+.Hui-aside{position:absolute;top:70px;bottom:0;left:0;width:70px;z-index:101;float:left;}
 .Hui-aside,.Hui-article-box,.dislpayArrow{-moz-transition:all 0.2s ease 0s;-webkit-transition:all 0.2s ease 0s;-ms-transition:all 0.2s ease 0s;-o-transition:all 0.2s ease 0s;transition:all 0.2s ease 0s}
-
+.Hui-article-box{position:absolute;top:70px;right:0;bottom:0;left:230px;z-index:123;min-width:1190px;/*margin-left: 160px;*/background: #EEEEEE;margin: 0 auto;width: 100%;}
 /*左侧菜单*/
 .menu_dropdown dl{margin-bottom:0;}
 .menu_dropdown dt{display:block;padding-top:45px;cursor:pointer;height:30px;font-size:12px;text-align:center;}
 .menu_dropdown dt b{position:absolute;display:block;background:url(../../images/icon_jt2.png) no-repeat 0 -6px;font-size:0;height:5px;right:15px;line-height:0;overflow:hidden;top:50%;width:9px;margin-top:-3px;transition-duration:0.3s;transition-property:all}
-.menu_dropdown dd{display:none;width:160px;position:absolute;left:70px;top:0px;z-index:999;background:#eaeaea;}
+.menu_dropdown dd{width:160px;height:100%;position:absolute;left:70px;top:0px;z-index:999;background:#eaeaea;}
 .menu_dropdown dt.selected b{transform:rotate(180deg);transition-duration:0.3s;transition-property:all;_background-position:0 0}
 .menu_dropdown dd.selected{display:block;margin-left:0px}
 .menu_dropdown ul{padding:0px}
@@ -52,13 +52,16 @@ h4{line-height:30px}
 .menu_dropdown dd li a{line-height:40px;padding-left:15px;border-bottom:none;font-weight:normal;color:#333;display:block;background:url(../../images/img/dotlis.png) no-repeat 120px center}
 .menu_dropdown li a:hover{text-decoration:none;background:#fff url(../../images/img/dotlis.png) no-repeat 120px center;color:#5a98de;}
 .menu_dropdown li a.on{text-decoration:none;background:#fff url(../../images/img/dotlis02.png) no-repeat 120px center;color:#5a98de;}
+/*隐藏+*/
 .menu_dropdown dd li span{line-height:40px;padding-left:30px;border-bottom:none;font-weight:normal;color:#333;display:block;background:url(../../images/img/dotlis.png) no-repeat 10px center;cursor:pointer;}
-.menu_dropdown li span.on{text-decoration:none;background:url(../../images/img/dotlis02.png) no-repeat 10px center;color:#5a98de;}
+/*显示-*/
+.menu_dropdown li span.down{text-decoration:none;background:url(../../images/img/dotlis02.png) no-repeat 10px center;color:#5a98de;}
+
 .downnav{padding:5px 0;display:none;}
 .downnav a{padding-left:40px!important;background:none!important;font-size:12px;}
 .downnav a:hover,.downnav a.on{background:#fff!important;}
 .menu_dropdown dt:hover,.menu_dropdown dt.on{background:#fff;color:#5a98de;}
-.menu_dropdown dt.leftIcon01{background:url(../../images/img/leftIcon01.png) no-repeat center 10px;}
+.menu_dropdown dt.leftIcon01{background:url(../../images/img/leftIcon01.png) no-repeat center 10px;background-size:30px 30px;}
 .menu_dropdown dt.leftIcon02{background:url(../../images/img/leftIcon02.png) no-repeat center 10px;}
 .menu_dropdown dt.leftIcon03{background:url(../../images/img/leftIcon03.png) no-repeat center 10px;}
 .menu_dropdown dt.leftIcon04{background:url(../../images/img/leftIcon04.png) no-repeat center 10px;}
@@ -68,7 +71,7 @@ h4{line-height:30px}
 .menu_dropdown dt.leftIcon08{background:url(../../images/img/leftIcon08.png) no-repeat center 10px;}
 .menu_dropdown dt.leftIcon09{background:url(../../images/img/leftIcon09.png) no-repeat center 10px;}
 .menu_dropdown dt.leftIcon10{background:url(../../images/img/leftIcon10.png) no-repeat center 10px;}
-.menu_dropdown dt.leftIcon01:hover{background:#fff  url(../../images/img/leftIcon01_02.png) no-repeat center 10px;}
+.menu_dropdown dt.leftIcon01:hover{background:#fff  url(../../images/img/leftIcon01_02.png) no-repeat center 10px;background-size:30px 30px;}
 .menu_dropdown dt.leftIcon02:hover{background:#fff url(../../images/img/leftIcon02_02.png) no-repeat center 10px;}
 .menu_dropdown dt.leftIcon03:hover{background:#fff url(../../images/img/leftIcon03_02.png) no-repeat center 10px;}
 .menu_dropdown dt.leftIcon04:hover{background:#fff url(../../images/img/leftIcon04_02.png) no-repeat center 10px;}
@@ -78,7 +81,7 @@ h4{line-height:30px}
 .menu_dropdown dt.leftIcon08:hover{background:#fff url(../../images/img/leftIcon08_02.png) no-repeat center 10px;}
 .menu_dropdown dt.leftIcon09:hover{background:#fff url(../../images/img/leftIcon09_02.png) no-repeat center 10px;}
 .menu_dropdown dt.leftIcon10:hover{background:#fff url(../../images/img/leftIcon10_02.png) no-repeat center 10px;}
-.menu_dropdown dt.leftIcon01.on{background:#fff url(../../images/img/leftIcon01_02.png) no-repeat center 10px;}
+.menu_dropdown dt.leftIcon01.on{background:#fff url(../../images/img/leftIcon01_02.png) no-repeat center 10px; background-size:30px 30px;}
 .menu_dropdown dt.leftIcon02.on{background:#fff url(../../images/img/leftIcon02_02.png) no-repeat center 10px;}
 .menu_dropdown dt.leftIcon03.on{background:#fff url(../../images/img/leftIcon03_02.png) no-repeat center 10px;}
 .menu_dropdown dt.leftIcon04.on{background:#fff url(../../images/img/leftIcon04_02.png) no-repeat center 10px;}
@@ -91,6 +94,19 @@ h4{line-height:30px}
 .menu_dropdown dt.on{position:relative;}
 /*自做三角*/
 .menu_dropdown dt.on:after{display:block;content:'';position:absolute;top:27px;right:0;width:0px;height:0px;border:10px solid transparent;border-right-color:#eaeaea;}
+
+/*左侧背景*/
+.left_bg{width:158px;position:absolute;left:70px;top:70px;bottom:0;background:#eaeaea;z-index:10;box-shadow:0 0 5px rgba(181,172,172,0.5);}
+
+
+/*菜单显示隐藏 中间按钮*/
+.left-show-hide{height:172px;width:20px;position:absolute;top:329px;left:0;cursor:pointer;z-index:125;}
+.left-hide{background:url(../../images/show_hide.png) no-repeat -16px center;}
+.left-show{background:url(../../images/show_hide.png) no-repeat -85px center;}
+
+
+
+
 
 /*当前项目*/
 .wanTop{background:rgb(42,87,154);height:70px;left:230px;right:0;position:absolute;z-index:130;min-width:1190px;}
@@ -133,6 +149,6 @@ table .text-c td .btn:hover{text-decoration:underline;}
 .myselect-box ul li:hover,.myselect-box ul li.myselect{color:#78a71b;font-weight:400;background:#f5f5f5;}
 .select-box-select{display:none;}
 
-
-
-
+/*主体内容*/
+.Hui-article-box #Hui-tabNav .Hui-tabNav-wp .acrossTab .active span
+{display: inline-block;width: 60px;height: 20px;border:1px solid #0066CC;line-height: 20px;text-align: center;font-size: 14px;margin:10px 0 0 10px;cursor: pointer;}

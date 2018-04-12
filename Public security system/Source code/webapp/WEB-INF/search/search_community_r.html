@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../../static/css/search_community_r.css">
+</head>
+<body>
+    <div class="background">
+        <div class="header">
+            <!--............................搜索栏条目..........................-->
+            <!--返回-->
+            <div class="return">
+                <a href="${pageContext.request.contextPath}/index"> << 返回</a>
+            </div>
+            <!--搜索条目-->
+            <div class="search">
+                <input  ng-model="signature" type="text" placeholder="姓名/电话/生日/职业">
+                <div class="camera">
+                    <a href="#">
+                        <img src="../../../static/img/camera_normal.png" alt="">
+                    </a>
+                </div>
+                <div class="y_1">|</div>
+                <div class="search-icon" ng-click="selectCondition()" >
+                    <a href="/search_name">
+                        <img src="../../../static/img/search_normal.png">
+                    </a>
+                </div>
+            </div>
+            <!--字体图标-->
+            <div class="nav">
+                <a href="index"><span class="iconfont icon-shouye"></span></a>
+                <a href="logout"><span class="iconfont icon-tuichu"></span></a>
+            </div>
+        </div>
+        <div class="partition">
+            <div class="data_list">
+                <a href="#">数据列表</a>
+            </div>
+            <div class="relationship">
+                <a href="#">关系网络</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

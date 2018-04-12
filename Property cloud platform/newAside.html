@@ -74,344 +74,362 @@
            
 		</header>
 
-		
-		<!--侧栏-->
-    <aside class="Hui-aside">
-		<input runat="server" id="divScrollValue" type="hidden" value="">
-		<div class="menu_dropdown bk_2">
-			
-			<dl id="">
-			     <dt class="leftIcon01 on" id="leftIcon0">物业中心</dt>
-					<dd>
-					    <ul>
-							<li>
-								<span class="on" id="span00">基础管理</span>
-								<div class="downnav" style="display: block;">
-									<a href="#">项目档案</a>
-								</div>
-								<div class="downnav" style="display: block;">
-									<a href="#">楼栋档案</a>
-								</div>
-								<div class="downnav" style="display: block;">
-									<a href="#">房屋档案</a>
-								</div>
-								<div class="downnav" style="display: block;">
-									<a href="#">住户管理</a>
-								</div>
-								<div class="downnav" style="display: block;">
-									<a href="#">身份认证管理</a>
-								</div>
-							</li>
-							<li>
-								<span id="span01">物业管理</span>
-								<div class="downnav">
-								   <a href="#">公告管理</a>
-								</div>
-								<div class="downnav">
-								  <a href="#">投诉管理</a>
-								</div>
-								<div class="downnav">
-								  <a href="#">报修管理</a>
-								</div>
-								<div class="downnav">
-								   <a href="#">评论管理</a>
-								</div>
-								<div class="downnav">
-								   <a href="#">访客管理</a>
-								</div>
-								<div class="downnav">
-								   <a href="#">投票管理</a>
-								</div>
-							 </li>
-							<li>
-								<span id="span02">生活缴费</span>
-								<div class="downnav">
-								  <a href="#">生活缴费</a>
-								</div>
-								<div class="downnav">
-								  <a href="#">交易记录</a>
-								</div>
-								<div class="downnav">
-								  <a href="#">费用设置</a> 
-								</div>
-								<div class="downnav">
-								  <a href="#">数据导出记录</a>
-								</div>
-								<div class="downnav">
-								  <a href="#">数据导出记录</a> 
-								</div>
-							</li>
-							<li>
-								<span id="span03">查询管理</span>
-								<div class="downnav">
-								  <a href="#">房屋认证查询</a> 
-								</div>
-							</li>
-							<li>
-								<span id="span04">巡更管理</span>
-								<div class="downnav">
-								  <a href="#">巡更情况</a> 
-								</div>
-								<div class="downnav">
-								  <a href="#">巡更设置</a> 
-								</div>
-								<div class="downnav">
-								  <a href="#">排班计划</a> 
-								</div>
-								<div class="downnav">
-								  <a href="#">班次设置</a> 
-								</div>
-							</li>
-							<li>
-								<span id="span05">设施设备</span>
-								<div class="downnav">
-								  <a href="#">台帐管理</a> 
-								</div>
-								<div class="downnav">
-								  <a href="#">类别管理</a> 
-								</div>
-								<div class="downnav">
-								  <a href="#">等级管理</a> 
-								</div>
-								<div class="downnav">
-								  <a href="#">供应商/品牌管理</a> 
-								</div>
-								<div class="downnav">
-								  <a href="#">二维码管理</a> 
-								</div>
-						    </li>
-						</ul>
-				    </dd>
-				</dl>
-	        <dl id="">
-					<dt class="leftIcon09" id="leftIcon1">报警中心</dt>
-					<dd>
-					    <ul>
-						    <li>
-								<span id="span10">家庭安防</span>
-								<div class="downnav">
-								  <a href="#">报警消息记录</a> 
-								</div>
-							</li>
-							<li>
-								<span id="span11">公共安防</span>
-							    <div class="downnav">
-								  <a href="#">报警消息记录</a> 
-								</div>
-							</li>
-						</ul>
-					</dd>
-				</dl>
-			
-			<dl id="">
-					<dt class="leftIcon02" onclick="parkAlertFn();" id="leftIcon2">车场系统</dt>
-					<dd>
+		   	<!--侧栏-->
+        <aside class="Hui-aside">
+				<input runat="server" id="divScrollValue" type="hidden" value="">
+				<div class="menu_dropdown bk_2">
 					
-					</dd>
-				</dl>
-			
-			<dl id="">
-					<dt class="leftIcon03" id="leftIcon3">门禁系统</dt>
-					<dd>
-						<!-- 判断是否当前小区是否有车场 -->
-					<ul>
-					    <li>
-							<span id="span30">基础管理</span>
-							<div class="downnav">
-							  <a href="#">门禁设置</a> 
-							</div>
-							<div class="downnav">
-							  <a href="#">语音播报</a> 
-							</div>
-							<div class="downnav">
-							  <a href="#">电梯门禁设置</a> 
-							</div>
-							<div class="downnav">
-							 <a href="#">门禁权限设置</a> 
-							</div>
-							<div class="downnav">
-							 <a href="#">APP授权管理</a> 
-							</div>
-							<div class="downnav">
-							 <a href="#">电梯权限审核</a> 
-							</div>
-							<div class="downnav">
-							 <a href="#">门禁工程师管理</a> 
-							</div>
-							<div class="downnav">
-							 <a href="#">摄像头设置</a> 
-							</div>
-							<div class="downnav">
-							 <a href="#">信报箱设置</a> 
-							</div>
-					    </li>
-						<li>
-							<span id="span31">身份证门禁卡管理</span>
-							<div class="downnav">
-							 <a href="#">卡发行</a> 
-							</div>
-							<div class="downnav">
-							 <a href="#">门卡挂失解挂</a> 
-							</div>
-							<div class="downnav">
-							 <a href="#">门卡注销</a> 
-							</div>
-							<div class="downnav">
-							 <a href="#">门卡授权查询</a> 
-							</div>
-						</li>
-						<li>
-							<span id="span32">门卡管理</span>
-							<div class="downnav">
-							 <a href="#">门卡挂失解挂</a> 
-							</div>
-							<div class="downnav">
-							 <a href="#">门卡发行</a> 
-							</div>
-							<div class="downnav">
-							 <a href="#">门卡注销</a> 
-							</div>
-							<div class="downnav">
-							 <a href="#">门卡设置</a> 
-							</div>
-							<div class="downnav">
-							 <a href="#">门卡授权查询</a> 
-							</div>
-						</li>
-						<li>
-							<span id="span33">查询管理</span>
-							<div class="downnav">
-							 <a href="#">开门查询</a> 
-							</div>
-							<div class="downnav">
-							<a href="#">门禁固定密码查询</a> 
-							</div>
-							<div class="downnav">
-							<a href="#">开信箱查询</a> 
-							</div>
-						</li>
-				    </ul>
-			    </dd>
-		    </dl>
-			
-			<dl id="">
-				<dt class="leftIcon04" id="leftIcon4">对讲系统</dt>
-				<dd>
-				    <ul>
-						<li>
-							<span id="span40">基础管理</span>
-							<div class="downnav">
-							<a href="#">设备管理</a> 
-							</div>
-						</li>
-						<li>
-							<span id="span41">查询管理</span>
-							<div class="downnav">
-							<a href="#">对讲试图查询</a> 
-							</div>
-							<div class="downnav">
-							<a href="#">对讲事故查询</a> 
-							</div>
-						</li>
-					</ul>
-				</dd>
-			</dl>
-			
-			<dl id="">
-				<dt class="leftIcon05" id="leftIcon5">系统管理</dt>
-				<dd>
-				
-					<ul>
-					    <li>
-							<span id="span50">基本设置</span>
-							<div class="downnav">
-							  <a href="#">用户小区管理</a> 
-							</div>
-							<div class="downnav">
-							<a href="#">修改密码</a> 
-							</div>
-							<div class="downnav">
-							<a href="#">日志查询</a> 
-						    </div>
+					<dl id="">
+					     <dt class="leftIcon01 on" id="leftIcon0">物业中心</dt>
+							<dd style="display: block;">
+							    <ul>
+									<li>
+										<span class="down" id="span00">基础管理</span>
+										<div class="downnav" style="display: block;">
+											<a href="#">项目档案</a>
+										</div>
+										<div class="downnav" style="display: block;">
+											<a href="#">楼栋档案</a>
+										</div>
+										<div class="downnav" style="display: block;">
+											<a href="#">房屋档案</a>
+										</div>
+										<div class="downnav" style="display: block;">
+											<a href="#">住户管理</a>
+										</div>
+										<div class="downnav" style="display: block;">
+											<a href="#">身份认证管理</a>
+										</div>
+									</li>
+									<li>
+										<span id="span01">物业管理</span>
+										<div class="downnav">
+										   <a href="#">公告管理</a>
+										</div>
+										<div class="downnav">
+										  <a href="#">投诉管理</a>
+										</div>
+										<div class="downnav">
+										  <a href="#">报修管理</a>
+										</div>
+										<div class="downnav">
+										   <a href="#">评论管理</a>
+										</div>
+										<div class="downnav">
+										   <a href="#">访客管理</a>
+										</div>
+										<div class="downnav">
+										   <a href="#">投票管理</a>
+										</div>
+									 </li>
+									<li>
+										<span id="span02">生活缴费</span>
+										<div class="downnav">
+										  <a href="#">生活缴费</a>
+										</div>
+										<div class="downnav">
+										  <a href="#">交易记录</a>
+										</div>
+										<div class="downnav">
+										  <a href="#">费用设置</a> 
+										</div>
+										<div class="downnav">
+										  <a href="#">数据导出记录</a>
+										</div>
+										<div class="downnav">
+										  <a href="#">数据导出记录</a> 
+										</div>
+									</li>
+									<li>
+										<span id="span03">查询管理</span>
+										<div class="downnav">
+										  <a href="#">房屋认证查询</a> 
+										</div>
+									</li>
+									<li>
+										<span id="span04">巡更管理</span>
+										<div class="downnav">
+										  <a href="#">巡更情况</a> 
+										</div>
+										<div class="downnav">
+										  <a href="#">巡更设置</a> 
+										</div>
+										<div class="downnav">
+										  <a href="#">排班计划</a> 
+										</div>
+										<div class="downnav">
+										  <a href="#">班次设置</a> 
+										</div>
+									</li>
+									<li>
+										<span id="span05">设施设备</span>
+										<div class="downnav">
+										  <a href="#">台帐管理</a> 
+										</div>
+										<div class="downnav">
+										  <a href="#">类别管理</a> 
+										</div>
+										<div class="downnav">
+										  <a href="#">等级管理</a> 
+										</div>
+										<div class="downnav">
+										  <a href="#">供应商/品牌管理</a> 
+										</div>
+										<div class="downnav">
+										  <a href="#">二维码管理</a> 
+										</div>
+								    </li>
+								</ul>
+						    </dd>
+						</dl>
+			        <dl id="">
+							<dt class="leftIcon09" id="leftIcon1">报警中心</dt>
+							<dd style="display: none;">
+							    <ul>
+								    <li>
+										<span id="span10">家庭安防</span>
+										<div class="downnav">
+										  <a href="#">报警消息记录</a> 
+										</div>
+									</li>
+									<li>
+										<span id="span11">公共安防</span>
+									    <div class="downnav">
+										  <a href="#">报警消息记录</a> 
+										</div>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+					
+					<dl id="">
+							<dt class="leftIcon02" onclick="parkAlertFn();" id="leftIcon2">车场系统</dt>
+							<dd style="display: none;">
 							
-						</li>
-						<li>
-							<span id="span51">物业机构管理</span>
-							<div class="downnav">
-							<a href="#">组织层级管理</a> 
-							</div>
-							<div class="downnav">
-							<a href="#">职工管理</a> 
-							</div>
-							<div class="downnav">
-							<a href="#">角色权限管理</a> 
-							</div>
-							<div class="downnav">
-							<a href="#">值班安排</a> 
-							</div>
-						</li>
-					</ul>
-				</dd>
-			</dl>
-			
-			<dl id="">
-				<dt class="leftIcon06" id="leftIcon6">统计报表</dt>
-				<dd>
-				
-					<ul>
-					    <li>
-							<span id="span60">报表管理</span>
-							<div class="downnav">
-							<a href="#">物业经营报表</a> 
-							</div>
-							<div class="downnav">
-							<a href="#">物业日常报表</a> 
-							</div>
-						</li>
-					</ul>
-				</dd>
-			</dl>
-		</div>
-    </aside>
-	<section> 
-	     首页主体内容
+							</dd>
+						</dl>
+					
+					<dl id="">
+							<dt class="leftIcon03" id="leftIcon3">门禁系统</dt>
+							<dd style="display: none;">
+								<!-- 判断是否当前小区是否有车场 -->
+							<ul>
+							    <li>
+									<span id="span30">基础管理</span>
+									<div class="downnav">
+									  <a href="#">门禁设置</a> 
+									</div>
+									<div class="downnav">
+									  <a href="#">语音播报</a> 
+									</div>
+									<div class="downnav">
+									  <a href="#">电梯门禁设置</a> 
+									</div>
+									<div class="downnav">
+									 <a href="#">门禁权限设置</a> 
+									</div>
+									<div class="downnav">
+									 <a href="#">APP授权管理</a> 
+									</div>
+									<div class="downnav">
+									 <a href="#">电梯权限审核</a> 
+									</div>
+									<div class="downnav">
+									 <a href="#">门禁工程师管理</a> 
+									</div>
+									<div class="downnav">
+									 <a href="#">摄像头设置</a> 
+									</div>
+									<div class="downnav">
+									 <a href="#">信报箱设置</a> 
+									</div>
+							    </li>
+								<li>
+									<span id="span31">身份证门禁卡管理</span>
+									<div class="downnav">
+									 <a href="#">卡发行</a> 
+									</div>
+									<div class="downnav">
+									 <a href="#">门卡挂失解挂</a> 
+									</div>
+									<div class="downnav">
+									 <a href="#">门卡注销</a> 
+									</div>
+									<div class="downnav">
+									 <a href="#">门卡授权查询</a> 
+									</div>
+								</li>
+								<li>
+									<span id="span32">门卡管理</span>
+									<div class="downnav">
+									 <a href="#">门卡挂失解挂</a> 
+									</div>
+									<div class="downnav">
+									 <a href="#">门卡发行</a> 
+									</div>
+									<div class="downnav">
+									 <a href="#">门卡注销</a> 
+									</div>
+									<div class="downnav">
+									 <a href="#">门卡设置</a> 
+									</div>
+									<div class="downnav">
+									 <a href="#">门卡授权查询</a> 
+									</div>
+								</li>
+								<li>
+									<span id="span33">查询管理</span>
+									<div class="downnav">
+									 <a href="#">开门查询</a> 
+									</div>
+									<div class="downnav">
+									<a href="#">门禁固定密码查询</a> 
+									</div>
+									<div class="downnav">
+									<a href="#">开信箱查询</a> 
+									</div>
+								</li>
+						    </ul>
+					    </dd>
+				    </dl>
+					
+					<dl id="">
+						<dt class="leftIcon04" id="leftIcon4">对讲系统</dt>
+						<dd style="display: none;">
+						    <ul>
+								<li>
+									<span id="span40">基础管理</span>
+									<div class="downnav">
+									<a href="#">设备管理</a> 
+									</div>
+								</li>
+								<li>
+									<span id="span41">查询管理</span>
+									<div class="downnav">
+									<a href="#">对讲试图查询</a> 
+									</div>
+									<div class="downnav">
+									<a href="#">对讲事故查询</a> 
+									</div>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					
+					<dl id="">
+						<dt class="leftIcon05" id="leftIcon5">系统管理</dt>
+						<dd style="display: none;">
+						
+							<ul>
+							    <li>
+									<span id="span50">基本设置</span>
+									<div class="downnav">
+									  <a href="#">用户小区管理</a> 
+									</div>
+									<div class="downnav">
+									<a href="#">修改密码</a> 
+									</div>
+									<div class="downnav">
+									<a href="#">日志查询</a> 
+								    </div>
+									
+								</li>
+								<li>
+									<span id="span51">物业机构管理</span>
+									<div class="downnav">
+									<a href="#">组织层级管理</a> 
+									</div>
+									<div class="downnav">
+									<a href="#">职工管理</a> 
+									</div>
+									<div class="downnav">
+									<a href="#">角色权限管理</a> 
+									</div>
+									<div class="downnav">
+									<a href="#">值班安排</a> 
+									</div>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					
+					<dl id="">
+						<dt class="leftIcon06" id="leftIcon6">统计报表</dt>
+						<dd style="display: none;">
+						<ul>
+							    <li>
+									<span id="span60">报表管理</span>
+									<div class="downnav">
+									<a href="#">物业经营报表</a> 
+									</div>
+									<div class="downnav">
+									<a href="#">物业日常报表</a> 
+									</div>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+        </aside>
+	    <div class="left_bg"></div>
+	    
+	<section class="Hui-article-box">
+	    <div class="left-show-hide left-show"></div>  
+		<div id="Hui-tabNav" class="Hui-tabNav">
+		    <div class="Hui-tabNav-wp">
+		      <ul id="min_title_list" class="acrossTab cl" style="width: 99px; left: 0px;">
+		        <li class="active" style="padding-right:15px;">
+		          <span data-href="#">首页</span><em></em>
+		        </li>
+		      </ul>
+		    </div>
+		 </div>
 	</section>
-	<script src="js/jquery-1.5.2min.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="js/jquery-1.5.2min.js" type="text/javascript" charset="utf-8"></script>-->
+	<script
+		  src="https://code.jquery.com/jquery-1.12.4.min.js"
+		  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+		  crossorigin="anonymous">
+	</script>
 	<script>
 	     $(function(){
-//	     	$('#leftIcon1').click(function(){
-//	     		$(this).children().next().hide();
-//	     	})
+		//一级二级菜单
+		$("dt").click(function(){
+		
+			$(this).next('dd').show().parent().siblings().children('dd').hide();
+			$(this).addClass('on').parent('dl').siblings().children('dt').removeClass('on');          
+		});	
+        $("span").click(function(){
+        	if($(this).hasClass("down")){
+        		$(this).removeClass("down").nextAll().slideToggle();
+        	}else{
+    			$(this).addClass('down').nextAll().slideToggle();
+//      		$(this).parent().siblings().children('span').removeClass('down');
+        	}
+          });	
+          
+             //菜单栏中间按钮
+        $(".left-show-hide").on("click",function(){
+        	if($(this).hasClass('left-show')){
+        		$(this).parent().animate({"left":"70"});
+	      		$(this).removeClass('left-show').addClass('left-hide');
+        	}else{
+        		$(this).parent().animate({"left":"200"});
+        		$(this).removeClass('left-hide').addClass('left-show');
+        	}
+     		
+			
+//      	else
+//      	{
+//      		$(this).addClass('left-show');
+// 		  $(this).parent().stop(true,true).animate({"right":"70"})
+// 		  e.stopPropagation();
+//    	}
+      	
+        	
+        });
 
-//  没有用      $(function () {
-//			    $('#leftIcon0').click(function () {
-//			        $(this).parent().find('dd').show().end().siblings().find('dd').hide();
-//			    });
-//		   });
-//			 
-//		
-  		$("dt").click(function(){
-				//$(".rightMeun").toggle();
-//				ddindex = $(this).index("dt dd"); 
-//				console.log(ddindex);
-				$(this).next('dd').slideToggle(500).parent().siblings().children('dd').hide();
-			});
-			
-//			$("dl>dt").click(function(){
-//				var dtindex=$("dl>dt").index($(this));
-				//var ddindex=$("dd").index($(this));
-				//console.log(dtindex,ddindex);
-				//$("dt > dd").slideToggle(500);
-				
-//				ulList = $("dl>dt").children("dd");
-//				ulList.hide();
-//				ulList.eq(index).show();
-				 
-//			});
-//			
-			
-	});		
-		 
+});			 
 	</script>
 	</body>
 </html>
