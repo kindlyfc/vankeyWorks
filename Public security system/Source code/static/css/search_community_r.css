@@ -1,5 +1,6 @@
 html,body{
     height: 100%;
+    color: #fff;
 }
 a{
     text-decoration: none;
@@ -98,4 +99,99 @@ ul,li{padding: 0;margin: 0;list-style: none}
 }
 .icon-tuichu:hover{
     color: red;
+}
+/*主体部分*/
+.main{
+    width: 100%;
+    height: 86%;
+    background: url("../../static/img/search_bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.partition{
+    margin-top: 10px;
+    width: 100%;
+    height: 5%;
+}
+.data_list,.relationship{
+    display: inline-block;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    line-height: 45px;
+    font-size: 1.2em;
+    background: url("../../static/img/item.png") no-repeat;
+    background-size: 100% 100%;
+}
+.relationship{
+    position: relative;
+    left: -2%;
+    background: url("../../static/img/item_focus.png") no-repeat;
+    background-size: 100% 100%;
+}
+.relationship>a{color:#fff}
+.data_list>a{color: #505b6f;}
+.data_list>a:hover{color: #fff}
+/*左侧*/
+.base_data{
+    width: 25%;
+    height: 100%;
+    background: rgba(22,86,150,0.2);
+}
+.base_data>div{
+    border-bottom: 1px solid #24517A;
+    box-sizing: border-box;
+}
+.base_info_box,.select_box{padding: 5%}
+.base_info_box{
+    display: flex;
+    justify-content: space-between;
+}
+.base_info{margin-left: 5%}
+.base_info_img>img{
+    width:100%;
+    height: 100%;
+}
+.select_box>select{
+    border-color: #2184C8;
+    color: #50C4FD;
+    background-color: #093C69;
+    width: 35%;
+    margin-left: 9%;
+    display: inline-block;
+    padding: 1%;
+}
+select:nth-child(1),select:nth-child(2){margin-bottom: 5%}
+.car_info_title{
+    width: 100%;
+    height: 6%;
+    padding: 3%;
+    box-sizing: border-box;
+    color: #50C4FD;
+    cursor: pointer;
+}
+.normal{
+    display: inline-block;
+    width: 4%;
+    height: 100%;
+    float: right;
+    background: url("../../static/img/icon-arrow-right2.png") no-repeat;
+    background-size: 100% 100%;
+}
+.active{
+    width: 5%;
+    background: url("../../static/img/icon-arrow-bottom1.png") no-repeat;
+    background-size: 90% 90%;
+}
+.car_info{
+    display: none;
+    width: 100%;
+    height: 6%;
+    padding: 3% 5%;
+    box-sizing: border-box;
+    color: #2E87AF;
+}
+.car_info:hover{
+    background:  #056AA2;
+    cursor: pointer;
+    color: #fff;
 }

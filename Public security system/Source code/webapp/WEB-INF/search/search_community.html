@@ -3,288 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../../../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../static/css/body.css">
+    <link rel="stylesheet" href="../../../static/font_icon/iconfont.css">
+    <link rel="stylesheet" href="../../../static/css/search_community.css">
 </head>
 <body>
-<link rel="stylesheet" href="../../../static/css/bootstrap.min.css">
-<link rel="stylesheet" href="../../../static/css/body.css">
-<link rel="stylesheet" href="../../../static/font_icon/iconfont.css">
-<link rel="stylesheet" href="../../../static/css/search_community.css">
-</body>
-<div class="background">
-    <div class="header">
-        <!--............................搜索栏条目..........................-->
-        <!--返回-->
-        <div class="return">
-            <a href="${pageContext.request.contextPath}/index"> << 返回</a>
-        </div>
-        <!--搜索条目-->
-        <div class="search">
-            <input  ng-model="signature" type="text" placeholder="姓名/电话/生日/职业">
-            <div class="camera">
-                <a href="#">
-                    <img src="../../../static/img/camera_normal.png" alt="">
-                </a>
+    <div class="background">
+        <div class="header">
+            <!--............................搜索栏条目..........................-->
+            <!--返回-->
+            <div class="return">
+                <a href="${pageContext.request.contextPath}/index"> << 返回</a>
             </div>
-            <div class="y_1">|</div>
-            <div class="search-icon" ng-click="selectCondition()" >
-                <a href="/search_name">
-                    <img src="../../../static/img/search_normal.png">
-                </a>
+            <!--搜索条目-->
+            <div class="search">
+                <input  ng-model="signature" type="text" placeholder="姓名/电话/生日/职业">
+                <div class="camera">
+                    <a href="#">
+                        <img src="../../../static/img/camera_normal.png" alt="">
+                    </a>
+                </div>
+                <div class="y_1">|</div>
+                <div class="search-icon" ng-click="selectCondition()" >
+                    <a href="/search_name">
+                        <img src="../../../static/img/search_normal.png">
+                    </a>
+                </div>
+            </div>
+            <!--字体图标-->
+            <div class="nav">
+                <a href="index"><span class="iconfont icon-shouye"></span></a>
+                <a href="logout"><span class="iconfont icon-tuichu"></span></a>
             </div>
         </div>
-        <!--字体图标-->
-        <div class="nav">
-            <a href="index"><span class="iconfont icon-shouye"></span></a>
-            <a href="logout"><span class="iconfont icon-tuichu"></span></a>
-        </div>
-    </div>
-    <div class="partition">
-        <div class="data_list">
-            <a href="#">数据列表</a>
-        </div>
-        <div class="relationship">
-            <a href="#">关系网络</a>
-        </div>
-    </div>
-    <!--主体部分-->
-    <div class="main">
-        <!--左侧-->
-        <div class="left_side">
-            <p class="com_information">小区信息</p>
-            <img src="../../../static/img/bar02.png">
-            <div class="unit_image">
-                <img src="../../../static/img/home.png" alt="图片加载中...">
+        <div class="partition">
+            <div class="data_list">
+                <a href="search_community.html">数据列表</a>
             </div>
-            <div class="com_detail">
-                <p>所属省市：<span>四川省成都市</span></p>
-                <p>详细地址：<span>四川省成都市蜀跃路6号</span></p>
-                <p>总户数：<span>51</span> 总人数：<span>60</span></p>
-                <p>业主数：<span>60</span> 租户数：<span></span></p>
-                <p>流动人口数：<span></span> 常住人口数：<span></span></p>
-                <a href="#">房屋可视化（含水电气数据）</a><br>
-                <span class="data_export" onclick="show()">数据导出</span>
+            <div class="relationship">
+                <a href="search_community_r.html">关系网络</a>
             </div>
-            <img src="../../../static/img/divide.png" alt="">
-            <div id="people_counting"></div>
-            <div id="car_counting"></div>
         </div>
-        <!--右侧-->
-        <div class="right_side">
-            <div class="table_title">
-                门禁记录&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="#">抓拍图像记录</a>
-                <span class="tooltip_text">
-                    <span class="icon"></span>
-                    点击查看抓拍图像记录
-                </span>
+        <!--主体部分-->
+        <div class="main">
+            <!--左侧-->
+            <div class="left_side">
+                <p class="com_information">小区信息</p>
+                <img src="../../../static/img/bar02.png">
+                <div class="unit_image">
+                    <img src="../../../static/img/home.png" alt="图片加载中...">
+                </div>
+                <div class="com_detail">
+                    <p>所属省市：<span>四川省成都市</span></p>
+                    <p>详细地址：<span>四川省成都市蜀跃路6号</span></p>
+                    <p>总户数：<span>51</span> 总人数：<span>60</span></p>
+                    <p>业主数：<span>60</span> 租户数：<span></span></p>
+                    <p>流动人口数：<span></span> 常住人口数：<span></span></p>
+                    <a href="#">房屋可视化（含水电气数据）</a><br>
+                    <span class="data_export" onclick="show()">数据导出</span>
+                </div>
+                <img src="../../../static/img/divide.png" alt="">
+                <div id="people_counting"></div>
+                <div id="car_counting"></div>
             </div>
-            <table>
-                <thead>
-                <tr>
-                    <th>日期-时间</th>
-                    <th>用户姓名</th>
-                    <th>小区</th>
-                    <th>门禁ID</th>
-                    <th>开门情况</th>
-                    <th>开门方式</th>
-                    <th>抓拍图像</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                </tr>
-                <tr>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                </tr>
-                <tr>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                </tr>
-                <tr>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                    <td>日期-时间</td>
-                </tr>
-                </tbody>
-            </table>
-            <div class="table_title">
-                车行记录&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="#">抓拍图像记录</a>
-                <span class="tooltip_text">
-                    <span class="icon"></span>
-                    点击查看抓拍图像记录
-                </span>
-            </div>
-            <table>
-                <thead>
-                <tr>
-                    <th>日期-时间</th>
-                    <th>用户姓名</th>
-                    <th>小区</th>
-                    <th>停车场ID</th>
-                    <th>车牌号</th>
-                    <th>通行情况</th>
-                    <th>抓拍图像</th>
-                </tr>
+            <!--右侧-->
+            <div class="right_side">
+                <div class="table_title">
+                    门禁记录&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#">抓拍图像记录</a>
+                    <span class="tooltip_text">
+                        <span class="icon"></span>
+                        点击查看抓拍图像记录
+                    </span>
+                </div>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>日期-时间</th>
+                        <th>用户姓名</th>
+                        <th>小区</th>
+                        <th>门禁ID</th>
+                        <th>开门情况</th>
+                        <th>开门方式</th>
+                        <th>抓拍图像</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                    </tr>
+                    <tr>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                    </tr>
+                    <tr>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                    </tr>
+                    <tr>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                        <td>日期-时间</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="table_title">
+                    车行记录&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#">抓拍图像记录</a>
+                    <span class="tooltip_text">
+                        <span class="icon"></span>
+                        点击查看抓拍图像记录
+                    </span>
+                </div>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>日期-时间</th>
+                        <th>用户姓名</th>
+                        <th>小区</th>
+                        <th>停车场ID</th>
+                        <th>车牌号</th>
+                        <th>通行情况</th>
+                        <th>抓拍图像</th>
+                    </tr>
 
-                </thead>
-            </table>
-            <div class="table_title">
-                访客人记录&nbsp;
-                <a href="#">访客车记录</a>
+                    </thead>
+                </table>
+                <div class="table_title">
+                    访客人记录&nbsp;
+                    <a href="#">访客车记录</a>
 
-                <span class="tooltip_text">
-                    <span class="icon"></span>点击查看抓拍图像记录
-                </span>
+                    <span class="tooltip_text">
+                        <span class="icon"></span>点击查看抓拍图像记录
+                    </span>
+                </div>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>日期-时间</th>
+                        <th>访客姓名</th>
+                        <th>被防者姓名</th>
+                        <th>访问地址</th>
+                        <th>访问理由</th>
+                    </tr>
+                    </thead>
+                </table>
             </div>
-            <table>
-                <thead>
-                <tr>
-                    <th>日期-时间</th>
-                    <th>访客姓名</th>
-                    <th>被防者姓名</th>
-                    <th>访问地址</th>
-                    <th>访问理由</th>
-                </tr>
-                </thead>
-            </table>
+        </div>
+        <!--导出框-->
+        <div class="export_container">
+            <div class="export">
+                <h3>小区信息导出选项</h3>
+                <p>(只能导出7天内数据)</p>
+                <div class="check_box"></div>
+                <img src="../../../static/img/queding.png" alt="">
+                <img src="../../../static/img/quxiao.png" alt="" onclick="hide()">
+            </div>
         </div>
     </div>
-    <!--导出框-->
-    <div class="export_container">
-        <div class="export">
-            <h3>小区信息导出选项</h3>
-            <p>(只能导出7天内数据)</p>
-            <div class="check_box"></div>
-            <img src="../../../static/img/queding.png" alt="">
-            <img src="../../../static/img/quxiao.png" alt="" onclick="hide()">
-        </div>
-    </div>
-</div>
-<script src="https://cdn.bootcss.com/echarts/4.0.4/echarts.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script>
-    function show(){
-        $('.export_container').show();
-    }
-    function hide() {
-        $('.export_container').hide();
-    }
-</script>
-<script>
-    // echarts图表
-    var peopleCountingChart = echarts.init(document.getElementById('people_counting'));
-    var carCountingChart= echarts.init(document.getElementById('car_counting'));
-    optionPeople = {
-        title:{
-            show:true,
-            x:'center',
-            text:'一周内人流量统计',
-            textStyle:{color:'#BA6751',fontSize:'12'}
-        },
-        xAxis: {
-            type: 'category',
-            data: ['4/9', '4/10', '4/11', '4/12', '4/13', '4/14', '4/15'],
-            axisLine:{
-                lineStyle:{color:'#fff',width:'2'}
-            }
-        },
-        yAxis: {
-            type: 'value',
-            splitLine:{show:false},
-            axisLine:{
-                lineStyle:{color:'#fff',width:'3'}
-            }
-        },
-        series: [{
-            data: [820, 932, 901, 934, 1290, 1330, 1320],
-            type: 'line',
-            lineStyle: {
-                color:"#4FC8FE",
-                width: 2
+    <script src="https://cdn.bootcss.com/echarts/4.0.4/echarts.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        function show(){
+            $('.export_container').show();
+        }
+        function hide() {
+            $('.export_container').hide();
+        }
+    </script>
+    <script>
+        // echarts图表
+        var peopleCountingChart = echarts.init(document.getElementById('people_counting'));
+        var carCountingChart= echarts.init(document.getElementById('car_counting'));
+        optionPeople = {
+            title:{
+                show:true,
+                x:'center',
+                text:'一周内人流量统计',
+                textStyle:{color:'#BA6751',fontSize:'12'}
             },
-            itemStyle:{color:"#4FC8FE"}
-        }]
-    };
-    optionCar = {
-        title: {
-            text: '一周车内流量统计',
-            x:'center',
-            align:'right',
-            textStyle:{
-                color:'#BA6751',
-                fontSize:'12'
-            }
-        },
-        xAxis: {
-            type: 'category',
-            data: ['4/9','4/10','4/11','4/12','4/13','4/14','4/15'],
-            axisLine:{
-                lineStyle:{color:'#fff',width:'2'}
-            }
-        },
-        yAxis: {
-            splitLine:{show:false},
-            type: 'value',
-            axisLine:{
-                lineStyle:{color:'#fff',width:'3'}
-            }
-        },
-        legend: {
-            data:[
+            xAxis: {
+                type: 'category',
+                data: ['4/9', '4/10', '4/11', '4/12', '4/13', '4/14', '4/15'],
+                axisLine:{
+                    lineStyle:{color:'#fff',width:'2'}
+                }
+            },
+            yAxis: {
+                type: 'value',
+                splitLine:{show:false},
+                axisLine:{
+                    lineStyle:{color:'#fff',width:'3'}
+                }
+            },
+            series: [{
+                data: [820, 932, 901, 934, 1290, 1330, 1320],
+                type: 'line',
+                lineStyle: {
+                    color:"#4FC8FE",
+                    width: 2
+                },
+                itemStyle:{color:"#4FC8FE"}
+            }]
+        };
+        optionCar = {
+            title: {
+                text: '一周车内流量统计',
+                x:'center',
+                align:'right',
+                textStyle:{
+                    color:'#BA6751',
+                    fontSize:'12'
+                }
+            },
+            xAxis: {
+                type: 'category',
+                data: ['4/9','4/10','4/11','4/12','4/13','4/14','4/15'],
+                axisLine:{
+                    lineStyle:{color:'#fff',width:'2'}
+                }
+            },
+            yAxis: {
+                splitLine:{show:false},
+                type: 'value',
+                axisLine:{
+                    lineStyle:{color:'#fff',width:'3'}
+                }
+            },
+            legend: {
+                data:[
+                    {
+                        name:'出',
+                        icon:'line',
+                        textStyle:{color:'#fff'}
+                    },
+                    {
+                        name:'入',
+                        icon:'line',
+                        textStyle:{color:'#fff'}
+                    }
+                ],
+                left: 'right'
+            },
+            series: [
                 {
                     name:'出',
-                    icon:'line',
-                    textStyle:{color:'#fff'}
+                    data: [820, 932, 901, 934, 1290, 1330, 1120],
+                    type: 'line',
+                    lineStyle:{color:'#BA6751',width:'2'},
+                    itemStyle:{color:"#BA6751"}
                 },
                 {
                     name:'入',
-                    icon:'line',
-                    textStyle:{color:'#fff'}
+                    data:[720, 1032, 801, 1034, 1190, 1430, 1032],
+                    type:'line',
+                    lineStyle:{color:'#4FC8FE',width:'2'},
+                    itemStyle:{color:"#4FC8FE"}
                 }
-            ],
-            left: 'right'
-        },
-        series: [
-            {
-                name:'出',
-                data: [820, 932, 901, 934, 1290, 1330, 1120],
-                type: 'line',
-                lineStyle:{color:'#BA6751',width:'2'},
-                itemStyle:{color:"#BA6751"}
-            },
-            {
-                name:'入',
-                data:[720, 1032, 801, 1034, 1190, 1430, 1032],
-                type:'line',
-                lineStyle:{color:'#4FC8FE',width:'2'},
-                itemStyle:{color:"#4FC8FE"}
-            }
-        ]
-    };
-    peopleCountingChart.setOption(optionPeople);
-    carCountingChart.setOption(optionCar);
-</script>
+            ]
+        };
+        peopleCountingChart.setOption(optionPeople);
+        carCountingChart.setOption(optionCar);
+    </script>
+</body>
+
 </html>

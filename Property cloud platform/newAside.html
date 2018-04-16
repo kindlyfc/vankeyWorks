@@ -86,7 +86,7 @@
 									<li>
 										<span class="down" id="span00">基础管理</span>
 										<div class="downnav" style="display: block;">
-											<a href="#">项目档案</a>
+											<a href="test.html">项目档案</a>
 										</div>
 										<div class="downnav" style="display: block;">
 											<a href="#">楼栋档案</a>
@@ -392,7 +392,7 @@
 		  crossorigin="anonymous">
 	</script>
 	<script>
-	     $(function(){
+	       $(function(){
 		//一级二级菜单
 		$("dt").click(function(){
 		
@@ -404,7 +404,6 @@
         		$(this).removeClass("down").nextAll().slideToggle();
         	}else{
     			$(this).addClass('down').nextAll().slideToggle();
-//      		$(this).parent().siblings().children('span').removeClass('down');
         	}
           });	
           
@@ -417,18 +416,12 @@
         		$(this).parent().animate({"left":"200"});
         		$(this).removeClass('left-hide').addClass('left-show');
         	}
-     		
-			
-//      	else
-//      	{
-//      		$(this).addClass('left-show');
-// 		  $(this).parent().stop(true,true).animate({"right":"70"})
-// 		  e.stopPropagation();
-//    	}
-      	
-        	
         });
-
+//		$('.downnav>a').click(function(){
+//              var html=$(this)[0].innerHTML;
+//              var template=$('<div>'+html+'</div>');
+//              $('.Hui-tabNav-wp').append(template);
+//		});
 });			 
 	</script>
 	</body>

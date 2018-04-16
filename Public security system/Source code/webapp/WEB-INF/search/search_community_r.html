@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../../../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../static/css/body.css">
+    <link rel="stylesheet" href="../../../static/font_icon/iconfont.css">
     <link rel="stylesheet" href="../../../static/css/search_community_r.css">
 </head>
 <body>
@@ -36,12 +39,63 @@
         </div>
         <div class="partition">
             <div class="data_list">
-                <a href="#">数据列表</a>
+                <a href="search_community.html">数据列表</a>
             </div>
             <div class="relationship">
-                <a href="#">关系网络</a>
+                <a href="search_community_r.html">关系网络</a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="base_data">
+                <div class="base_info_box">
+                    <div class="base_info_img">
+                        <img src="../../../static/img/estateList.png" alt="">
+                    </div>
+                    <div class="base_info">
+                        <div>好斯佳普罗旺斯</div>
+                        <div>地址：<span>四川省成都市金牛区好斯佳物业普罗旺斯</span></div>
+                        <div>经度：<span>104.008616</span></div>
+                        <div>纬度：<span>30.706498</span></div>
+                        <div>总户数：<span>50</span></div>
+                        <div>总人数：<span>1</span></div>
+                    </div>
+                </div>
+                <div class="select_box">
+                    <select name="select_builder" id="select_builder">
+                        <option value="all">全部单元楼层</option>
+                    </select>
+                    <select name="select_house" id="select_house">
+                        <option value="all">全部户</option>
+                    </select>
+                    <select name="select_node" id="select_node">
+                        <option value="all">全部节点</option>
+                    </select>
+                    <select name="select_link" id="select_link">
+                        <option value="all">全部关系</option>
+                    </select>
+                </div>
+                <div class="car_info_title" style="display: block">
+                    车辆：(<span>1</span>条)
+                    <i class="normal"></i>
+                </div>
+                <div class="car_info">川KB8888</div>
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        $('.car_info_title').click(function(){
+            console.log(0);
+            if($('.car_info_title>i').hasClass('active')){
+                $(this).children('i').removeClass('active');
+                $('.car_info').hide();
+                console.log(1);
+            }else{
+                $(this).children('i').addClass('active');
+                $('.car_info').show();
+                console.log(2);
+            }
+        })
+    </script>
 </body>
 </html>
