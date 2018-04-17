@@ -60,6 +60,9 @@ h4{line-height:30px}
 .downnav{padding:5px 0;display:none;}
 .downnav a{padding-left:40px!important;background:none!important;font-size:12px;}
 .downnav a:hover,.downnav a.on{background:#fff!important;}
+.menu_dropdown dd{
+	overflow: hidden;
+}
 .menu_dropdown dt:hover,.menu_dropdown dt.on{background:#fff;color:#5a98de;}
 .menu_dropdown dt.leftIcon01{background:url(../../images/img/leftIcon01.png) no-repeat center 10px;background-size:30px 30px;}
 .menu_dropdown dt.leftIcon02{background:url(../../images/img/leftIcon02.png) no-repeat center 10px;}
@@ -109,7 +112,7 @@ h4{line-height:30px}
 
 
 /*当前项目*/
-.wanTop{background:rgb(42,87,154);height:70px;left:230px;right:0;position:absolute;z-index:130;min-width:1190px;}
+.wanTop{background:rgb(42,87,154);width:86%;height:70px;left:230px;right:0;position:absolute;z-index:130;min-width:1190px;}
 .wanTop form{display:block;}
 .wanTop form select{color:#fff;background:#2e2c2e;border:none;float:left;padding:0 10px;height:70px;line-height:70px;font-size:18px;cursor:pointer;}
 .wanTop form select:focus{outline:none;}
@@ -157,13 +160,13 @@ table .text-c td .btn:hover{text-decoration:underline;}
 .loading{background:url(../../images/loading_072.gif) no-repeat center;height:100px}
 .show_iframe iframe{position:absolute;bottom:0;height:100%;width:100%}
 .Hui-tabNav-more{position:absolute;right:0px;width:70px;top:8px;display:none;}
-.acrossTab li{margin-right:6px;color:#333;box-sizing:border-box;float:left;height: 25px;line-height: 25px;display:none}
+.acrossTab li{margin-right:6px;color:#333;box-sizing:border-box;float:left;height: 25px;line-height: 25px;cursor: pointer;}
 .acrossTab li:first-child{margin-left:20px;}
 .acrossTab li em{display:none;}
 .acrossTab li{background:none;border:1px solid #ccc;padding:0 2px 0 15px;}
 .acrossTab li.active{background:none;border:1px solid #5a98de;color:#5a98de;}
-.acrossTab li i{background:url(../../images/icon-title.png) no-repeat 0 9px;}
-.acrossTab li.active i{background:url(../../images/icon-title.png) no-repeat 0 -6px;}
+.acrossTab li i{background:url(../../images/icon-title.png) no-repeat 0 9px;display: inline-block;width: 16px;height: 16px;margin: 0 0 0 10px;}
+.acrossTab li.active i{background:url(../../images/icon-title1.png) no-repeat 0 9px;display: inline-block;width: 16px;height: 16px;margin: 0 0 0 10px;}
 .Hui-tabNav-more{top:5px;}
 .Hui-tabNav-more a.btn-default{margin-right:5px;background:#fff;border:1px solid #5a98de;color:#5a98de;}
 
