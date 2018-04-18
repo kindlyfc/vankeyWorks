@@ -14,20 +14,23 @@
 .main{width: 100%;height: 90%;padding: 2%;box-sizing: border-box;position:relative}
 /*跳转按钮*/
 .partition{width: 100%;height: 35px;}
-.alarm_state,.house_state,.parking_state{font-size:1.2em;width: 200px;height: 35px;line-height:35px;position: absolute;cursor: pointer;background: url("../../static/img/item.png") no-repeat;background-size: 100% 100%;text-align: center;}
-.alarm_state{background: url("../../static/img/item_focus.png") no-repeat; background-size: 100% 100%;}
-.house_state{left: 200px;color: gray;}
-.parking_state{left: 360px;color: gray;}
-/*报警状态内容*/
+.alarm_state,.house_state,.parking_state{font-size:1.2em;width: 200px;height: 35px;line-height:35px;position: absolute;cursor: pointer;background: url("../../static/img/item.png") no-repeat;background-size: 100% 100%;text-align: center;color:gray}
+.clicked{background: url("../../static/img/item_focus.png") no-repeat;background-size:100% 100%;color:#fff}
+.house_state{left: 200px;}
+.parking_state{left: 360px;}
+/*主体部分容器样式*/
 .container{width: 96%;height: 88%;position: absolute;background: url("../../static/img/bg_wydsj.jpg") no-repeat;background-size: 100% 100%;border: 1px solid #013C6B}
-.alarm_state_container{display:none;width: 100%;height: 90%;position:absolute;}
 .left_side,.right_side{height: 100%;float: left;padding: 2%;box-sizing: border-box;}
 .left_side{width: 60%;text-align: center}
-.right_side{width: 40%;text-align: center}
-.right_side_title,.left_side_title{margin: 2% auto;font-size: 1.2em;width: 190px;height: 60px;line-height: 60px;background: url("../../static/img/city_07.png") no-repeat;background-size: 100% 100%;}
-.table_container{width: 100%;height: 62%;overflow: scroll;}
+.right_side{width: 40%;text-align: center;overflow: hidden}
+.right_side_title,.left_side_title{margin: 20px auto;font-size: 1.2em;width: 190px;height: 60px;line-height: 60px;background: url("../../static/img/city_07.png") no-repeat;background-size: 100% 100%;}
+.table_container{width: 100%;height: 68%;overflow: scroll;}
+/*报警状态内容*/
+.alarm_state_container{width: 100%;height: 90%;position:absolute;}
 /*房屋状态内容*/
-.house_state_container{z-index:10;width: 100%;height: 90%;position: absolute;}
+.house_state_container{display: none;width: 100%;height: 90%;position: absolute;}
+/*车位状态内容*/
+.parking_state_container{display:none;width: 100%;height: 90%;position: absolute;}
 /*去除滚动条*/
 ::-webkit-scrollbar{width:0}
 h2{margin: 30px 0 30px}
@@ -38,3 +41,7 @@ h2{margin: 30px 0 30px}
 .table_container>table{width: 100%;background: rgba(255,255,255,0.05);}
 .table_container td{text-align: center;padding: 1% .5%;color: white;}
 tr:nth-child(even){background:rgba(0,0,0,0.1)}
+.table_right{width: 100%;color:#fff;font-size: 1em;border-collapse: collapse;background: rgba(255,255,255,0.05);}
+.table_right th{height: 40px;text-align: center;background: url(../../static/img/listTitle.png);background-size: 100% 100%;padding: 10px 0;}
+.table_right tbody td{padding: 2%;width: 8%;text-align: center;border: 1px solid #0C2B47;}
+tbody tr:hover{cursor: pointer;background: #0C2B47;color: #fff;}

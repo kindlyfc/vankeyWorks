@@ -23,11 +23,12 @@
         <div class="main">
             <!--跳转按钮-->
             <div class="partition">
-                <div class="alarm_state">报警状态</div>
+                <div class="alarm_state clicked">报警状态</div>
                 <div class="house_state">房屋状态</div>
                 <div class="parking_state">车位状态</div>
             </div>
             <div class="container">
+                <!--报警状态显示内容-->
                 <div class="alarm_state_container">
                     <div class="left_side">
                         <div class="left_side_title">报警状态可视化</div>
@@ -288,11 +289,13 @@
                         </table>
                     </div>
                 </div>
+                <!--房屋状态显示内容-->
                 <div class="house_state_container">
                     <div class="left_side">
                         <div class="left_side_title">房屋状态可视化</div>
                         <div class="state">
                             <b>房屋状态：</b>
+                            <span style="border:1px solid rgba(255,255,255,0.5)"></span>业主
                             <span style="background: green"></span>租户
                             <span style="background: blue"></span>空置
                             <span style="background: orange"></span>装修
@@ -507,55 +510,324 @@
                         </div>
                     </div>
                     <div class="right_side">
-                        <div class="right_side_title">房屋状态数据分析</div>
-                        <div id="house_chart" style="width: 600px;height: 400px"></div>
+                        <div class="right_side_title">房屋状态比例</div>
+                        <div id="house_chart" style="width: 550px;height: 350px;margin: 5% auto;background: rgba(0,0,0,0.1)"></div>
+                    </div>
+                </div>
+                <!--车位状态显示内容-->
+                <div class="parking_state_container">
+                    <div class="left_side">
+                        <div class="left_side_title">车位状态可视化</div>
+                        <div class="state">
+                            <b>车位状态：</b>
+                            <span style="border:1px solid rgba(255,255,255,0.5)"></span>已售
+                            <span style="background: green"></span>待租
+                            <span style="background: blue"></span>待售
+                            <span style="background: orange"></span>已租
+                            <span style="background: red"></span>临停车位
+                        </div>
+                        <div class="table_container">
+                            <table cellspacing="0">
+                                <thead></thead>
+                                <tbody>
+                                <tr>
+                                    <td style="background: green">B1-1001</td>
+                                    <td>B1-1002</td>
+                                    <td>B1-1003</td>
+                                    <td>B1-1004</td>
+                                    <td>B1-1005</td>
+                                    <td style="background: blue">B1-1006</td>
+                                    <td style="background: orange">B1-1007</td>
+                                    <td>B1-1008</td>
+                                </tr>
+                                <tr>
+                                    <td>B1-1009</td>
+                                    <td style="background: orange">B1-10010</td>
+                                    <td>B1-1011</td>
+                                    <td>B1-1012</td>
+                                    <td>B1-1013</td>
+                                    <td>B1-1014</td>
+                                    <td>B1-1015</td>
+                                    <td style="background: green">B1-1016</td>
+                                </tr>
+                                <tr>
+                                    <td>B1-1017</td>
+                                    <td>B1-1018</td>
+                                    <td>B1-1019</td>
+                                    <td>B1-1020</td>
+                                    <td style="background: green">B1-1021</td>
+                                    <td>B1-1022</td>
+                                    <td>B1-1023</td>
+                                    <td style="background: orange">B1-1024</td>
+                                </tr>
+                                <tr>
+                                    <td>B1-1025</td>
+                                    <td style="background: green">B1-1026</td>
+                                    <td>B1-1027</td>
+                                    <td>B1-1028</td>
+                                    <td>B1-1029</td>
+                                    <td>B1-1030</td>
+                                    <td>B1-1031</td>
+                                    <td>B1-1032</td>
+                                </tr>
+                                <tr>
+                                    <td style="background: green">B2-2001</td>
+                                    <td>B2-2002</td>
+                                    <td>B2-2003</td>
+                                    <td>B2-2004</td>
+                                    <td style="background: orange">B2-2005</td>
+                                    <td style="background: blue">B2-2006</td>
+                                    <td>B2-2007</td>
+                                    <td>B2-2008</td>
+                                </tr>
+                                <tr>
+                                    <td>B2-2009</td>
+                                    <td>B2-20010</td>
+                                    <td style="background: orange">B2-2011</td>
+                                    <td>B2-2012</td>
+                                    <td>B2-2013</td>
+                                    <td>B2-2014</td>
+                                    <td>B2-2015</td>
+                                    <td style="background: green">B2-2016</td>
+                                </tr>
+                                <tr>
+                                    <td>B2-2017</td>
+                                    <td>B2-2018</td>
+                                    <td>B2-2019</td>
+                                    <td>B2-2020</td>
+                                    <td style="background: green">B2-2021</td>
+                                    <td>B2-2022</td>
+                                    <td>B2-2023</td>
+                                    <td>B2-2024</td>
+                                </tr>
+                                <tr>
+                                    <td>B1-2025</td>
+                                    <td style="background: green">B2-2026</td>
+                                    <td>B2-2027</td>
+                                    <td>B2-2028</td>
+                                    <td>B2-2029</td>
+                                    <td>B2-2030</td>
+                                    <td>B2-2031</td>
+                                    <td>B2-2032</td>
+                                </tr>
+                                <tr>
+                                    <td style="background: green">B3-2001</td>
+                                    <td>B3-2002</td>
+                                    <td>B3-2003</td>
+                                    <td>B3-2004</td>
+                                    <td>B3-2005</td>
+                                    <td style="background: blue">B3-2006</td>
+                                    <td>B3-2007</td>
+                                    <td>B3-2008</td>
+                                </tr>
+                                <tr>
+                                    <td>B3-2009</td>
+                                    <td>B3-20010</td>
+                                    <td>B3-2011</td>
+                                    <td>B3-2012</td>
+                                    <td style="background: red">B3-2013</td>
+                                    <td style="background: red">B3-2014</td>
+                                    <td style="background: red">B3-2015</td>
+                                    <td style="background: red">B3-2016</td>
+                                </tr>
+                                <tr>
+                                    <td>B3-2017</td>
+                                    <td>B3-2018</td>
+                                    <td>B3-2019</td>
+                                    <td>B3-2020</td>
+                                    <td style="background: red">B3-2021</td>
+                                    <td style="background: red">B3-2022</td>
+                                    <td style="background: red">B3-2023</td>
+                                    <td style="background: red">B3-2024</td>
+                                </tr>
+                                <tr>
+                                    <td>B1-2025</td>
+                                    <td style="background: green">B3-2026</td>
+                                    <td>B3-2027</td>
+                                    <td>B3-2028</td>
+                                    <td style="background: red">B3-2029</td>
+                                    <td style="background: red">B3-2030</td>
+                                    <td style="background: red">B3-2031</td>
+                                    <td style="background: red">B3-2032</td>
+                                </tr>
+                                <tr>
+                                    <td>B1-1025</td>
+                                    <td style="background: green">B1-1026</td>
+                                    <td>B1-1027</td>
+                                    <td>B1-1028</td>
+                                    <td>B1-1029</td>
+                                    <td>B1-1030</td>
+                                    <td>B1-1031</td>
+                                    <td>B1-1032</td>
+                                </tr>
+                                <tr>
+                                    <td style="background: green">B2-2001</td>
+                                    <td>B2-2002</td>
+                                    <td>B2-2003</td>
+                                    <td>B2-2004</td>
+                                    <td style="background: orange">B2-2005</td>
+                                    <td style="background: blue">B2-2006</td>
+                                    <td>B2-2007</td>
+                                    <td>B2-2008</td>
+                                </tr>
+                                <tr>
+                                    <td>B2-2009</td>
+                                    <td>B2-20010</td>
+                                    <td style="background: orange">B2-2011</td>
+                                    <td>B2-2012</td>
+                                    <td>B2-2013</td>
+                                    <td>B2-2014</td>
+                                    <td>B2-2015</td>
+                                    <td style="background: green">B2-2016</td>
+                                </tr>
+                                <tr>
+                                    <td>B2-2017</td>
+                                    <td>B2-2018</td>
+                                    <td>B2-2019</td>
+                                    <td>B2-2020</td>
+                                    <td style="background: green">B2-2021</td>
+                                    <td>B2-2022</td>
+                                    <td>B2-2023</td>
+                                    <td>B2-2024</td>
+                                </tr>
+                                <tr>
+                                    <td>B1-2025</td>
+                                    <td style="background: green">B2-2026</td>
+                                    <td>B2-2027</td>
+                                    <td>B2-2028</td>
+                                    <td>B2-2029</td>
+                                    <td>B2-2030</td>
+                                    <td>B2-2031</td>
+                                    <td>B2-2032</td>
+                                </tr>
+                                <tr>
+                                    <td style="background: green">B3-2001</td>
+                                    <td>B3-2002</td>
+                                    <td>B3-2003</td>
+                                    <td>B3-2004</td>
+                                    <td>B3-2005</td>
+                                    <td style="background: blue">B3-2006</td>
+                                    <td>B3-2007</td>
+                                    <td>B3-2008</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="right_side">
+                        <div class="right_side_title">车位状态比例</div>
+                        <div id="parking_chart" style="width: 550px;height: 350px;margin: 5% auto;background: rgba(0,0,0,0.1)"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <script src="https://cdn.bootcss.com/echarts/4.0.4/echarts.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!--echarts图表-->
     <script>
-        var myChart = echarts.init(document.getElementById('house_chart'));
-        var option={
-            title : {
-                text: '某站点用户访问来源',
-                subtext: '纯属虚构',
-                x:'center'
-            },
-            tooltip : {
+        var myChart1 = echarts.init(document.getElementById('house_chart'));
+        var myChart2 = echarts.init(document.getElementById('parking_chart'));
+        var option1={
+            tooltip: {
                 trigger: 'item',
-                formatter: "{a} <br/>{b} : {c} ({d}%)"
+                formatter: "{a} <br/>{b}: {c} ({d}%)"
             },
             legend: {
                 orient: 'vertical',
-                left: 'left',
-                data: ['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
+                x: 'left',
+                data:['抵押','装修','空置','租户','业主'],
+                textStyle:{color:'#fff'}
             },
-            series : [
+            series: [
                 {
-                    name: '访问来源',
-                    type: 'pie',
-                    radius : '55%',
-                    center: ['50%', '60%'],
-                    data:[
-                        {value:335, name:'直接访问'},
-                        {value:310, name:'邮件营销'},
-                        {value:234, name:'联盟广告'},
-                        {value:135, name:'视频广告'},
-                        {value:1548, name:'搜索引擎'}
-                    ],
-                    itemStyle: {
+                    name:'房屋状态占比',
+                    type:'pie',
+                    radius: ['50%', '70%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'center'
+                        },
                         emphasis: {
-                            shadowBlur: 10,
-                            shadowOffsetX: 0,
-                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                            show: true,
+                            textStyle: {
+                                fontSize: '30',
+                                fontWeight: 'bold'
+                            }
                         }
-                    }
+                    },
+                    labelLine: {
+                        normal: {
+                            show: false
+                        }
+                    },
+                    data:[
+                        {value:35, name:'抵押'},
+                        {value:200, name:'装修'},
+                        {value:100, name:'空置'},
+                        {value:500, name:'租户'},
+                        {value:1548, name:'业主'}
+                    ],
                 }
-            ]
+            ],
         };
-        myChart.setOption(option);
+        var option2={
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b}: {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                x: 'left',
+                data:['临停车位','已租','待售','待租','已售'],
+                textStyle:{color:'#fff'}
+            },
+            series: [
+                {
+                    name:'车位状态占比',
+                    type:'pie',
+                    radius: ['50%', '70%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'center'
+                        },
+                        emphasis: {
+                            show: true,
+                            textStyle: {
+                                fontSize: '30',
+                                fontWeight: 'bold'
+                            }
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            show: false
+                        }
+                    },
+                    data:[
+                        {value:35, name:'临停车位'},
+                        {value:200, name:'已租'},
+                        {value:100, name:'待售'},
+                        {value:500, name:'待租'},
+                        {value:1548, name:'已售'}
+                    ],
+                }
+            ],
+        }
+
+        myChart1.setOption(option1);
+        myChart2.setOption(option2);
+    </script>
+    <script>
+        $('.partition').on("click",'div',function(){
+            var index=$(this).index();
+            $('.container>div').eq(index).show().siblings().hide();
+            $(this).addClass('clicked').siblings().removeClass('clicked');
+        });
     </script>
 </body>
 </html>
